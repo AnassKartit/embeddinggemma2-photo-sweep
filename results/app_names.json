@@ -1,0 +1,8 @@
+{
+ "what": "App name search on demo/WhatsApp Images (112 files, 29 fictional family photos, truth labelled by eye in data/names_truth.json), ArcFace R50 at 0.4, YuNet finder, one face per name per photo",
+ "date": "2026-10-13",
+ "one_photo_5_clicks": {"taught_from": "fam_airport (one click per person)", "found": "114/121", "wrong_names_in_family_photos": 0, "non_family_photos_with_a_name": 0, "whole_family_all_5": "17/22"},
+ "plus_2_clicks": {"taught_from": "+ Lily and Emma in fam_pool", "found_all_29": "118/121", "found_excluding_the_2_teaching_photos": "108/111", "wrong": 0, "non_family_photos_with_a_name": 0, "whole_family_all_5": "20/22 (18/20 excluding teaching photos)", "misses": {"fam_camping": ["Emma"], "fam_beach": ["Lily"], "fam_homework": ["Sam"]}},
+ "search_ms": {"name only": 0.1, "name + words (Max birthday, first call warm-up)": 523.2},
+ "how": "bench: mapping rebuilt from app/make_demo.py seed; names taught through POST /api/name like the app's click-to-name"
+}

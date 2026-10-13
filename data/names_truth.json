@@ -1,0 +1,198 @@
+{
+ "labelled": "2026-10-13, by eye from the images (not from the prompts), before any test ran",
+ "names": {
+  "Walt": "grandfather",
+  "Sam": "father",
+  "Emma": "mother",
+  "Lily": "daughter, about 15",
+  "Max": "son, about 8"
+ },
+ "enroll": "data/refs/us_family_sheet.jpg (one photo, five people standing left to right: Walt, Sam, Emma, Lily, Max)",
+ "notes": {
+  "group_party": "the five of them plus three neighbours (not family)",
+  "mirror": "phone covers part of her face",
+  "blurry_kid": "motion blur",
+  "thanksgiving": "Max seen from the side"
+ },
+ "photos": {
+  "fam_airport.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_baseball.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_bday.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_beach.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_bike.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_blurry_kid.jpg": [
+   "Max"
+  ],
+  "fam_camping.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_christmas.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_church.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_couch.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_date_night.jpg": [
+   "Sam",
+   "Emma"
+  ],
+  "fam_dog_park.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_fair.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_graduation.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_grandpa_fishing.jpg": [
+   "Walt",
+   "Max"
+  ],
+  "fam_grandpa_portrait.jpg": [
+   "Walt"
+  ],
+  "fam_group_party.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_hike.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_homework.jpg": [
+   "Sam",
+   "Max"
+  ],
+  "fam_july4.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_kitchen.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_mirror.jpg": [
+   "Lily"
+  ],
+  "fam_pool.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_rain.jpg": [
+   "Emma",
+   "Max"
+  ],
+  "fam_roadtrip.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_school.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_snow.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_soccer.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ],
+  "fam_thanksgiving.jpg": [
+   "Walt",
+   "Sam",
+   "Emma",
+   "Lily",
+   "Max"
+  ]
+ }
+}

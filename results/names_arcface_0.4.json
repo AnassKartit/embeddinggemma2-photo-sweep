@@ -1,0 +1,231 @@
+{
+ "model": "arcface",
+ "threshold": 0.4,
+ "enroll": "one photo (the family sheet)",
+ "photos": 82,
+ "seconds_all_faces": 5.8,
+ "per_name": {
+  "Walt": {
+   "found": 24,
+   "in": 24,
+   "wrong": 0
+  },
+  "Sam": {
+   "found": 24,
+   "in": 24,
+   "wrong": 0
+  },
+  "Emma": {
+   "found": 23,
+   "in": 24,
+   "wrong": 0
+  },
+  "Lily": {
+   "found": 23,
+   "in": 23,
+   "wrong": 0
+  },
+  "Max": {
+   "found": 25,
+   "in": 26,
+   "wrong": 0
+  }
+ },
+ "found_total": "119/121",
+ "wrong_in_family_photos": 0,
+ "whole_family_photos_all_5_found": "20/22",
+ "names_found_in_other_families_or_strangers": {},
+ "negatives_checked": 52,
+ "misses": {
+  "fam_camping.jpg": [
+   "Emma"
+  ],
+  "fam_snow.jpg": [
+   "Max"
+  ]
+ },
+ "pred": {
+  "fam_airport.jpg": {
+   "Walt": 0.845,
+   "Sam": 0.714,
+   "Max": 0.692,
+   "Emma": 0.669,
+   "Lily": 0.638
+  },
+  "fam_baseball.jpg": {
+   "Walt": 0.794,
+   "Sam": 0.656,
+   "Emma": 0.629,
+   "Lily": 0.502,
+   "Max": 0.493
+  },
+  "fam_bday.jpg": {
+   "Emma": 0.664,
+   "Walt": 0.631,
+   "Sam": 0.589,
+   "Lily": 0.552,
+   "Max": 0.472
+  },
+  "fam_beach.jpg": {
+   "Walt": 0.702,
+   "Max": 0.658,
+   "Sam": 0.51,
+   "Emma": 0.506,
+   "Lily": 0.436
+  },
+  "fam_bike.jpg": {
+   "Walt": 0.734,
+   "Max": 0.581,
+   "Sam": 0.57,
+   "Lily": 0.565,
+   "Emma": 0.545
+  },
+  "fam_blurry_kid.jpg": {
+   "Max": 0.485
+  },
+  "fam_camping.jpg": {
+   "Sam": 0.675,
+   "Lily": 0.609,
+   "Walt": 0.577,
+   "Max": 0.537
+  },
+  "fam_christmas.jpg": {
+   "Sam": 0.641,
+   "Lily": 0.584,
+   "Max": 0.564,
+   "Walt": 0.563,
+   "Emma": 0.534
+  },
+  "fam_church.jpg": {
+   "Walt": 0.846,
+   "Sam": 0.779,
+   "Emma": 0.701,
+   "Max": 0.698,
+   "Lily": 0.675
+  },
+  "fam_couch.jpg": {
+   "Walt": 0.678,
+   "Sam": 0.613,
+   "Lily": 0.563,
+   "Emma": 0.558,
+   "Max": 0.555
+  },
+  "fam_date_night.jpg": {
+   "Sam": 0.739,
+   "Emma": 0.73
+  },
+  "fam_dog_park.jpg": {
+   "Sam": 0.683,
+   "Walt": 0.662,
+   "Emma": 0.538,
+   "Max": 0.513,
+   "Lily": 0.421
+  },
+  "fam_fair.jpg": {
+   "Walt": 0.803,
+   "Lily": 0.654,
+   "Emma": 0.645,
+   "Max": 0.627,
+   "Sam": 0.614
+  },
+  "fam_graduation.jpg": {
+   "Sam": 0.769,
+   "Walt": 0.768,
+   "Lily": 0.681,
+   "Max": 0.674,
+   "Emma": 0.655
+  },
+  "fam_grandpa_fishing.jpg": {
+   "Walt": 0.716,
+   "Max": 0.575
+  },
+  "fam_grandpa_portrait.jpg": {
+   "Walt": 0.792
+  },
+  "fam_group_party.jpg": {
+   "Walt": 0.703,
+   "Sam": 0.702,
+   "Emma": 0.672,
+   "Lily": 0.664,
+   "Max": 0.561
+  },
+  "fam_hike.jpg": {
+   "Sam": 0.785,
+   "Walt": 0.766,
+   "Emma": 0.723,
+   "Max": 0.711,
+   "Lily": 0.647
+  },
+  "fam_homework.jpg": {
+   "Sam": 0.431,
+   "Max": 0.413
+  },
+  "fam_july4.jpg": {
+   "Walt": 0.816,
+   "Sam": 0.685,
+   "Max": 0.664,
+   "Lily": 0.639,
+   "Emma": 0.624
+  },
+  "fam_kitchen.jpg": {
+   "Walt": 0.748,
+   "Sam": 0.7,
+   "Emma": 0.509,
+   "Lily": 0.448,
+   "Max": 0.422
+  },
+  "fam_mirror.jpg": {
+   "Lily": 0.647
+  },
+  "fam_pool.jpg": {
+   "Walt": 0.691,
+   "Sam": 0.651,
+   "Max": 0.624,
+   "Emma": 0.406,
+   "Lily": 0.402
+  },
+  "fam_rain.jpg": {
+   "Max": 0.655,
+   "Emma": 0.57
+  },
+  "fam_roadtrip.jpg": {
+   "Walt": 0.767,
+   "Sam": 0.681,
+   "Max": 0.598,
+   "Lily": 0.591,
+   "Emma": 0.438
+  },
+  "fam_school.jpg": {
+   "Walt": 0.836,
+   "Sam": 0.737,
+   "Max": 0.687,
+   "Emma": 0.633,
+   "Lily": 0.593
+  },
+  "fam_snow.jpg": {
+   "Walt": 0.682,
+   "Lily": 0.652,
+   "Sam": 0.597,
+   "Emma": 0.457
+  },
+  "fam_soccer.jpg": {
+   "Walt": 0.742,
+   "Sam": 0.704,
+   "Lily": 0.677,
+   "Emma": 0.673,
+   "Max": 0.644
+  },
+  "fam_thanksgiving.jpg": {
+   "Walt": 0.707,
+   "Emma": 0.685,
+   "Lily": 0.684,
+   "Sam": 0.668,
+   "Max": 0.403
+  }
+ },
+ "tag_3_per_person": {
+  "recall_median": 1.0,
+  "negatives_with_a_name_median": 0.0,
+  "runs": 20
+ }
+}

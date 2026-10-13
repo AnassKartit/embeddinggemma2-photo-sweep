@@ -6,7 +6,9 @@ import json, subprocess, sys, time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
-MODE = sys.argv[2] if len(sys.argv) > 2 else "clean"          # clean | ask
+MODE = sys.argv[2] if len(sys.argv) > 2 else "clean"          # clean | ask | names (needs a scanned folder and no people.json yet)
+TEACH = "f238ea6401d404d0"                                     # names mode: the airport photo, one click per person, left to right
+NAMES = ["Walt", "Sam", "Emma", "Lily", "Max"]
 OUT = Path(sys.argv[1] if len(sys.argv) > 1 else "demo/recording"); FR = OUT / f"frames_{MODE}"; FR.mkdir(parents=True, exist_ok=True)
 for f in FR.glob("*.jpg"): f.unlink()
 FPS, steps, t0, frames = 8, [], [None], [0]
@@ -30,7 +32,22 @@ with sync_playwright() as p:
         pg.click(sel)
         for ch in text: pg.type(sel, ch); hold(0.07)
     t0[0] = time.time()
-    if MODE == "ask":
+    if MODE == "names":
+        mark("app"); hold(1.2)
+        pg.click('.pile[data-k="people"]'); hold(1.0)
+        card = f'.ph[data-id="{TEACH}"]'; pg.locator(card).scroll_into_view_if_needed(); pg.hover(card); hold(0.6)
+        pg.click(card + " .who"); mark("namer"); hold(1.2)
+        order = pg.evaluate(f"(()=>{{const p=R.photos.find(x=>x.id==='{TEACH}');return p.face_boxes.map((f,i)=>[f[0],i]).sort((a,b)=>a[0]-b[0]).map(x=>x[1])}})()")
+        for name, i in zip(NAMES, order):
+            box = pg.locator("#mbox .fbox").nth(i); box.click(); hold(0.3)
+            for ch in name: pg.keyboard.type(ch); hold(0.08)
+            pg.keyboard.press("Enter"); mark("named_" + name.lower()); hold(1.3)
+        hold(0.8); pg.mouse.click(30, 1060); pg.evaluate("scrollTo(0,0)"); pg.click('.pile[data-k="family"]'); mark("names_done"); hold(2.2)
+        for q, sec in (("Lily", 4.5), ("Max birthday", 4.0), ("whole family", 4.5)):
+            pg.evaluate("scrollTo(0,0)"); pg.fill("#search", ""); mark("search_" + q.replace(" ", "_")); type_slow("#search", q)
+            hold(sec); pg.mouse.wheel(0, 380); hold(1.4); pg.mouse.wheel(0, -380); hold(0.4)
+        mark("end"); b.close()
+    elif MODE == "ask":
         pg.click('.tab[data-v="askv"]'); mark("app"); hold(1.2)
         pg.click("#aindex"); mark("index")
         while pg.evaluate("fetch('/api/ask/state').then(r=>r.json()).then(s=>s.state)") != "ready": hold(0.3)
@@ -61,7 +78,7 @@ with sync_playwright() as p:
         pg.click("#sweep"); mark("sweep"); hold(2.6)
         pg.click("#undo"); mark("undo"); hold(2.2)
         for q in ("receipt", "birthday cake"):
-            pg.fill("#search", ""); mark("search_" + q.replace(" ", "_")); type_slow("#search", q); hold(2.4)
+            pg.evaluate("scrollTo(0,0)"); pg.fill("#search", ""); mark("search_" + q.replace(" ", "_")); type_slow("#search", q); hold(2.4)
         mark("end"); b.close()
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-i", str(FR / "%05d.jpg"), "-vf", "fps=30,format=yuv420p",
                 "-c:v", "libx264", "-crf", "16", "-preset", "slow", str(OUT / f"{MODE}.mp4")], check=True)

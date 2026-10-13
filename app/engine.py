@@ -4,7 +4,7 @@ EmbeddingGemma 2 (70 image tokens, 256 dims) sorts photos into piles and powers 
 one photo; a blur/darkness check catches accidental shots; cosine >= 0.93 marks near-duplicates. Numbers behind each choice:
 REVIEW.md. Nothing is deleted: the app moves files into a Sweep folder next to the scanned folder and can put them back.
 """
-import hashlib, json, time
+import hashlib, json, sys, time
 from pathlib import Path
 
 import cv2, numpy as np, torch
@@ -13,6 +13,7 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parent.parent
 TOKENS, DIMS, DUP = 70, 256, 0.93
 FACE_TH = 0.5                                             # one face at >= 0.5 (REVIEW.md, one-shot table)
+NAME_TH = 0.4                                             # ArcFace, a name at >= 0.4 (bench/names.py arcface: 119/121, 0 wrong, 0 strangers)
 FWD_MARGIN = 0.045                                        # "forwards" must beat "people" by this much, else the photo goes to review
 EXT = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
 
@@ -40,6 +41,8 @@ class Engine:
         ip.image_processor.max_soft_tokens = ip.image_processor.image_seq_length = ip.image_seq_length = TOKENS
         self.det = cv2.FaceDetectorYN.create(str(ROOT / "models/yunet.onnx"), "", (320, 320), 0.8, 0.3, 5000)
         self.rec = cv2.FaceRecognizerSF.create(str(ROOT / "models/sface.onnx"), "")
+        sys.path.insert(0, str(ROOT / "agent")); from faceid import Embedder
+        self.arc = Embedder("arcface")                    # names: ArcFace fingerprints (512 numbers), stronger than SFace
         names = list(LABELS)
         T = [self._norm(self._text(LABELS[n]).mean(0)) for n in names]
         self.label_names, self.label_vecs = names, np.stack(T)
@@ -58,14 +61,19 @@ class Engine:
     def image_vecs(self, imgs):
         return self._norm(self.model.encode([{"image": im} for im in imgs], batch_size=8, normalize_embeddings=True, show_progress_bar=False))
 
-    def faces(self, im: Image.Image):
+    def faces(self, im: Image.Image, boxes=False, arc=False):
+        """Face fingerprints (SFace, 128 numbers each); boxes=True adds each face's box as fractions of the image (x, y, w, h);
+        arc=True adds ArcFace fingerprints (512 numbers) for names."""
         img = cv2.cvtColor(np.array(im), cv2.COLOR_RGB2BGR); h, w = img.shape[:2]; k = 1280 / max(h, w)
         if k < 1: img = cv2.resize(img, (int(w * k), int(h * k))); h, w = img.shape[:2]
-        self.det.setInputSize((w, h)); _, found = self.det.detect(img); out = []
+        self.det.setInputSize((w, h)); _, found = self.det.detect(img); out, bx, av = [], [], []
         for f in (found if found is not None else []):
             if min(f[2], f[3]) >= 24:
                 x = self.rec.feature(self.rec.alignCrop(img, f)).flatten(); out.append(x / np.linalg.norm(x))
-        return out
+                bx.append([round(float(f[0]) / w, 4), round(float(f[1]) / h, 4), round(float(f[2]) / w, 4), round(float(f[3]) / h, 4)])
+                if arc: av.append(self.arc.vec(self.arc.crop(img, f)))
+        if arc: return out, bx, av
+        return (out, bx) if boxes else out
 
     @staticmethod
     def accidental(im: Image.Image):
@@ -81,7 +89,29 @@ def file_id(p: Path):
     return hashlib.sha1(str(p).encode()).hexdigest()[:16]
 
 
-def scan(engine: Engine, folder: Path, family_faces, progress=lambda *a: None, cache_dir: Path = None):
+def name_faces(photos, cache, people):
+    """people: {name: [ArcFace vectors]}. Each face gets the closest name at >= NAME_TH, one face per name per photo."""
+    names = list(people); G = [np.array(people[n]) for n in names]
+    for ph in photos:
+        A = [np.array(a) for a in cache[ph["key"]].get("arc", [])]; ph["names"] = {}
+        cand = sorted(((float((g @ a).max()), n, i) for i, a in enumerate(A) for n, g in zip(names, G) if len(g)), reverse=True)
+        used = set()
+        for sc, n, i in cand:
+            if sc < NAME_TH: break
+            if n in ph["names"] or i in used: continue
+            ph["names"][n] = round(sc, 3); used.add(i)
+            if i < len(ph["face_boxes"]): ph["face_boxes"][i] = ph["face_boxes"][i][:6] + [n]
+
+
+def repile(result):
+    """Anyone you named is family: their photos move to the Family pile (copies stay in Duplicates)."""
+    for ph in result["photos"]:
+        if ph.get("names") and ph["pile"] not in ("family", "duplicates"): ph["pile"] = "family"
+    result["piles"] = {k: [p["id"] for p in result["photos"] if p["pile"] == k] for k in result["piles"]}
+    result["stats"]["bytes"] = {k: sum(p["bytes"] for p in result["photos"] if p["pile"] == k) for k in result["piles"]}
+
+
+def scan(engine: Engine, folder: Path, family_faces, progress=lambda *a: None, cache_dir: Path = None, people=None):
     """Returns {'photos': [...], 'piles': {...}, 'stats': {...}}. Embeddings and faces are cached per file (path + size + mtime)."""
     files = sorted(p for p in folder.iterdir() if p.suffix.lower() in EXT and not p.name.startswith("."))
     cache_dir = cache_dir or folder / ".photo-sweep"; cache_dir.mkdir(exist_ok=True)
@@ -95,12 +125,13 @@ def scan(engine: Engine, folder: Path, family_faces, progress=lambda *a: None, c
         if not batch: return
         V = engine.image_vecs([b[1] for b in batch])
         for (key, im, rec), v in zip(batch, V):
-            rec["faces"] = [f.tolist() for f in engine.faces(im)]; rec["accidental"] = bool(engine.accidental(im))
+            F, B, A = engine.faces(im, arc=True); rec["faces"] = [f.tolist() for f in F]; rec["boxes"] = B; rec["accidental"] = bool(engine.accidental(im))
+            rec["arc"] = [[round(float(x), 5) for x in a] for a in A]
             vecs[key] = v; cache[key] = rec; done_new += 1
         batch.clear()
     for i, p in enumerate(files):
         st = p.stat(); key = f"{file_id(p)}_{st.st_size}_{int(st.st_mtime)}"
-        if key not in cache:
+        if key not in cache or "arc" not in cache[key]:            # older caches have no ArcFace fingerprints: redo those photos
             im = load(p); batch.append((key, im, {"w": im.width, "h": im.height}))
             if len(batch) == 8: flush()
         photos.append({"id": file_id(p), "name": p.name, "path": str(p), "bytes": st.st_size, "key": key})
@@ -114,7 +145,9 @@ def scan(engine: Engine, folder: Path, family_faces, progress=lambda *a: None, c
     for n, ph in enumerate(photos):
         rec = cache[ph["key"]]; F = [np.array(f) for f in rec["faces"]]
         ph["faces"] = len(F); ph["label"] = engine.label_names[int(S[n].argmax())]
-        ph["family_score"] = round(max((float((fam @ f).max()) for f in F), default=0.0), 3) if len(fam) else 0.0
+        per_face = [round(float((fam @ f).max()), 3) if len(fam) else 0.0 for f in F]
+        ph["family_score"] = max(per_face, default=0.0)
+        ph["face_boxes"] = [b + [sc, sc >= FACE_TH] for b, sc in zip(rec.get("boxes", []), per_face)]   # x, y, w, h, score, family?
         if ph["family_score"] >= FACE_TH: ph["pile"] = "family"
         elif rec["accidental"]: ph["pile"] = "accidental"
         elif ph["label"] == "people": ph["pile"] = "people"
@@ -131,8 +164,9 @@ def scan(engine: Engine, folder: Path, family_faces, progress=lambda *a: None, c
             seen.add(g)
             if g != best: photos[g]["dup_of"] = photos[best]["id"]; photos[g]["pile"] = "duplicates"
     for ph in photos: piles[ph["pile"]].append(ph["id"])
+    name_faces(photos, cache, people or {})
     secs = time.time() - t0
     stats = {"photos": len(photos), "new": done_new, "seconds": round(secs, 1),
              "ms_per_new_photo": round(secs / done_new * 1000, 1) if done_new else None,
              "bytes": {k: sum(p["bytes"] for p in photos if p["pile"] == k) for k in piles}}
-    return {"photos": photos, "piles": piles, "stats": stats, "E": E}
+    out = {"photos": photos, "piles": piles, "stats": stats, "E": E, "cache": cache}; repile(out); return out

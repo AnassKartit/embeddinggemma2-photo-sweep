@@ -15,7 +15,12 @@ HERE = Path(__file__).resolve().parent
 app = FastAPI()
 S = {"engine": None, "folder": Path(sys.argv[1]).expanduser() if len(sys.argv) > 1 else HERE.parent / "demo" / "Phone",
      "family_faces": [], "family_photo": None, "result": None, "progress": {"done": 0, "total": 0, "seconds": 0, "state": "idle"},
-     "moved": [], "lock": threading.Lock()}
+     "moved": [], "lock": threading.Lock(), "people": {}}
+
+def people_path(): return S["folder"] / ".photo-sweep" / "people.json"
+def load_people():
+    p = people_path(); S["people"] = json.loads(p.read_text()) if p.exists() else {}
+load_people()
 
 ENGINE_LOCK = threading.Lock()
 def engine():
@@ -38,7 +43,7 @@ def state():
 def set_folder(body: dict):
     p = Path(body["folder"]).expanduser()
     if not p.is_dir(): raise HTTPException(400, f"not a folder: {p}")
-    S["folder"], S["result"] = p, None; return {"ok": True}
+    S["folder"], S["result"] = p, None; load_people(); return {"ok": True}
 
 @app.post("/api/family")
 async def family(file: UploadFile = File(...)):
@@ -67,7 +72,7 @@ def run_scan():
         S["progress"] = {"done": 0, "total": 0, "seconds": 0, "state": "loading models"}
         e = engine(); S["progress"]["state"] = "scanning"
         def prog(d, t, s): S["progress"].update(done=d, total=t, seconds=round(s, 1))
-        S["result"] = eng.scan(e, S["folder"], S["family_faces"], prog)
+        load_people(); S["result"] = eng.scan(e, S["folder"], S["family_faces"], prog, people=S["people"])
         S["progress"]["state"] = "done"
 
 @app.post("/api/scan")
@@ -78,11 +83,26 @@ def scan():
 THUMBS = {}
 @app.get("/api/thumb/{pid}")
 def thumb(pid: str):
-    if pid in THUMBS: return Response(THUMBS[pid], media_type="image/jpeg")
     ph = next((p for p in (S["result"] or {}).get("photos", []) if p["id"] == pid), None)
     if not ph or not Path(ph["path"]).exists(): raise HTTPException(404)
-    im = ImageOps.exif_transpose(Image.open(ph["path"])).convert("RGB"); im.thumbnail((360, 360)); b = io.BytesIO(); im.save(b, "JPEG", quality=80)
-    THUMBS[pid] = b.getvalue(); return Response(THUMBS[pid], media_type="image/jpeg")
+    key = (pid, tuple((tuple(f[:4]), f[5], f[6] if len(f) > 6 else "") for f in ph.get("face_boxes", [])))   # redraw when names change
+    if key in THUMBS: return Response(THUMBS[key], media_type="image/jpeg")
+    im = ImageOps.exif_transpose(Image.open(ph["path"])).convert("RGB"); im.thumbnail((480, 480))
+    from PIL import ImageDraw, ImageFont
+    d = ImageDraw.Draw(im); W, H = im.size
+    try: font = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Bold.ttf", 15)
+    except OSError: font = ImageFont.load_default()
+    for f in ph.get("face_boxes", []):                           # the face model's own boxes: lime + name = someone you named, thin grey = anyone else
+        x, y, w, h, sc, fam = f[:6]; name = f[6] if len(f) > 6 else None
+        r = [x * W, y * H, (x + w) * W, (y + h) * H]
+        if name:
+            d.rounded_rectangle(r, radius=6, outline=(198, 244, 123), width=4)
+            t = name.upper(); tw = d.textlength(t, font=font); ty = max(0, r[1] - 22)
+            d.rounded_rectangle([r[0], ty, r[0] + tw + 12, ty + 20], radius=5, fill=(198, 244, 123)); d.text((r[0] + 6, ty + 2), t, fill=(7, 11, 20), font=font)
+        elif fam: d.rounded_rectangle(r, radius=6, outline=(198, 244, 123), width=4)
+        else: d.rounded_rectangle(r, radius=6, outline=(200, 205, 215), width=1)
+    b = io.BytesIO(); im.save(b, "JPEG", quality=82)
+    THUMBS[key] = b.getvalue(); return Response(THUMBS[key], media_type="image/jpeg")
 
 @app.get("/api/photo/{pid}")
 def photo(pid: str):
@@ -90,12 +110,56 @@ def photo(pid: str):
     if not ph: raise HTTPException(404)
     return FileResponse(ph["path"])
 
+FAMILY_WORDS = {"family", "everyone", "everybody", "all", "us", "together"}
+STOP = {"and", "with", "of", "photos", "photo", "pictures", "picture", "the", "a", "in", "at", "my", "me", "show", "find", "whole"}
+
 @app.get("/api/search")
 def search(q: str, k: int = 12):
+    """Plain words: EmbeddingGemma 2 ranks every photo. A name you taught (or "family"): only photos where the face model
+    found that person, then EmbeddingGemma 2 ranks them by the other words ("Emma birthday")."""
     r = S["result"]
     if r is None or not len(r["E"]): return {"hits": []}
-    t = time.time(); v = engine().text_vec(q); s = r["E"] @ v; top = np.argsort(-s)[:k]
+    t = time.time(); words = q.lower().replace(",", " ").split(); names = {n.lower(): n for n in S["people"]}
+    want = [names[w] for w in words if w in names]; fam = any(w in FAMILY_WORDS for w in words) and bool(names)
+    if want or fam:
+        rest = " ".join(w for w in words if w not in names and w not in FAMILY_WORDS and w not in STOP)
+        idx = [i for i, ph in enumerate(r["photos"]) if all(n in ph.get("names", {}) for n in want) and (not fam or len(ph.get("names", {})) >= (len(names) if "whole" in words or "together" in words else 2))]
+        if rest: v = engine().text_vec(rest); sc = {i: float(r["E"][i] @ v) for i in idx}
+        else: sc = {i: len(r["photos"][i]["names"]) + sum(r["photos"][i]["names"].values()) / 10 for i in idx}
+        top = sorted(idx, key=lambda i: -sc[i])
+        return {"ms": round((time.time() - t) * 1000, 1), "mode": "names", "who": want or ["family"], "faces": sum(len(ph.get("face_boxes", [])) for ph in r["photos"]),
+                "hits": [{"id": r["photos"][i]["id"], "score": round(sc[i], 3), "names": r["photos"][i]["names"]} for i in top]}
+    v = engine().text_vec(q); s = r["E"] @ v; top = np.argsort(-s)[:k]
     return {"ms": round((time.time() - t) * 1000, 1), "hits": [{"id": r["photos"][n]["id"], "score": round(float(s[n]), 3)} for n in top]}
+
+@app.post("/api/name")
+def name_face(body: dict):
+    """Teach a name: this face (photo id + face number) is <name>. More examples of the same person make it better."""
+    r = S["result"]; ph = next((p for p in (r or {}).get("photos", []) if p["id"] == body["id"]), None)
+    if not ph: raise HTTPException(404)
+    A = r["cache"][ph["key"]].get("arc", []); i = int(body["face"]); name = " ".join(str(body["name"]).split()).title()
+    if not name or i >= len(A): raise HTTPException(400, "no such face")
+    S["people"].setdefault(name, []).append(A[i]); people_path().write_text(json.dumps(S["people"]))
+    eng.name_faces(r["photos"], r["cache"], S["people"]); eng.repile(r)
+    return {"ok": True, "name": name, "examples": len(S["people"][name]), "photos": sum(name in p.get("names", {}) for p in r["photos"])}
+
+@app.get("/api/people")
+def people():
+    r = S["result"]; out = []
+    for n in S["people"]:
+        phs = [p for p in (r or {}).get("photos", []) if n in p.get("names", {})]
+        best = max(phs, key=lambda p: p["names"][n], default=None)
+        face = next((k for k, f in enumerate(best["face_boxes"]) if len(f) > 6 and f[6] == n), 0) if best else 0
+        out.append({"name": n, "photos": len(phs), "examples": len(S["people"][n]), "face": f"{best['id']}/{face}" if best else None})
+    return {"people": out}
+
+@app.get("/api/face/{pid}/{i}")
+def face_crop(pid: str, i: int):
+    ph = next((p for p in (S["result"] or {}).get("photos", []) if p["id"] == pid), None)
+    if not ph or i >= len(ph.get("face_boxes", [])): raise HTTPException(404)
+    im = ImageOps.exif_transpose(Image.open(ph["path"])).convert("RGB"); W, H = im.size; x, y, w, h = ph["face_boxes"][i][:4]
+    c = im.crop((int(max(0, (x - w * .25) * W)), int(max(0, (y - h * .25) * H)), int(min(1, (x + w * 1.25)) * W), int(min(1, (y + h * 1.25)) * H)))
+    c.thumbnail((160, 160)); b = io.BytesIO(); c.save(b, "JPEG", quality=85); return Response(b.getvalue(), media_type="image/jpeg")
 
 @app.post("/api/sweep")
 def sweep(body: dict):

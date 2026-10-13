@@ -23,6 +23,7 @@ plus two small open face models from [opencv_zoo](https://github.com/opencv/open
 | **Ask your files**: right file first, 30 questions on a Downloads folder | **30 of 30** (macOS Spotlight: 5, file-name search: 12) |
 | Answers from the found files, Gemma 4 E4B on the Mac | 11 of 11, median 2.0 s (busy Mac) |
 | Electricity bills: find, read, add up (AI reads, code calculates) | 12/12 bills exact; one-prompt total was wrong |
+| **Find anyone by name**: name 5 faces in ONE photo (ArcFace) | **114 of 121** family appearances found, **0** wrong names; 118/121 after 2 more clicks |
 | Vector store for one folder | numpy, ChromaDB, sqlite-vec, pgvector all 29/30; keep it simple |
 
 Full method, every table and the caveats: **[REVIEW.md](REVIEW.md)**.
@@ -31,7 +32,7 @@ Full method, every table and the caveats: **[REVIEW.md](REVIEW.md)**.
 
 ```bash
 uv venv .venv --python 3.12 && uv pip install --python .venv/bin/python -r requirements.txt
-./get_models.sh                                   # YuNet + SFace (EmbeddingGemma 2 downloads itself, ~1.5 GB)
+./get_models.sh                                   # YuNet + SFace + ArcFace (EmbeddingGemma 2 downloads itself, ~1.5 GB)
 .venv/bin/python app/make_demo.py                 # builds demo/WhatsApp Images (186 files) from the test set
 .venv/bin/python app/server.py "demo/WhatsApp Images"
 open http://127.0.0.1:8765
@@ -42,6 +43,11 @@ Answers come from Gemma 4 E4B (`mlx-community/gemma-4-E4B-it-qat-4bit`, download
 
 1. Scan the folder. 2. Tap ♥ on one family photo (or drop one in). 3. Review the piles and press **Sweep**: files move to
 `<folder>/_Sweep/<pile>/`, and **Undo** puts them back. Nothing is ever deleted by the app.
+
+**Find anyone by name**: hover a photo, click 👤, click a face, type a name, Enter. Then type the name in the search box
+("Lily", "Max birthday", "whole family"): it checks every face on the Mac and lights up that person's photos. Names stay in
+`<folder>/.photo-sweep/people.json`. ArcFace R50 comes from InsightFace's buffalo_l pack; its weights are licensed for
+non-commercial use only. Teach it from your own library with `agent/people.py` (groups, cross out wrong faces, hide groups).
 
 Point it at your own folder (for example WhatsApp Desktop's media folder, or Downloads) by typing the path in step 1.
 

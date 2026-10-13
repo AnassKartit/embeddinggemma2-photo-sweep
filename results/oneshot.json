@@ -1,0 +1,71 @@
+{
+ "enrolled_faces": 5,
+ "faces": {
+  "th0.363_need1": {
+   "family": 1.0,
+   "other_family": 0.75,
+   "other_people": 0.0,
+   "junk": 0.0
+  },
+  "th0.363_need2": {
+   "family": 1.0,
+   "other_family": 0.083,
+   "other_people": 0.0,
+   "junk": 0.0
+  },
+  "th0.45_need1": {
+   "family": 1.0,
+   "other_family": 0.083,
+   "other_people": 0.0,
+   "junk": 0.0
+  },
+  "th0.45_need2": {
+   "family": 0.966,
+   "other_family": 0.0,
+   "other_people": 0.0,
+   "junk": 0.0
+  },
+  "th0.5_need1": {
+   "family": 1.0,
+   "other_family": 0.0,
+   "other_people": 0.0,
+   "junk": 0.0
+  },
+  "th0.5_need2": {
+   "family": 0.931,
+   "other_family": 0.0,
+   "other_people": 0.0,
+   "junk": 0.0
+  }
+ },
+ "embedding": {
+  "family_in_top_29": 24,
+  "of": 29,
+  "top_29_mix": {
+   "family": 24,
+   "other_family": 5
+  },
+  "auc": 0.978
+ },
+ "fair_one_scene": {
+  "scenes_tried": 22,
+  "th0.45_need1": {
+   "family": 0.989,
+   "junk": 0.0,
+   "other_family": 0.057,
+   "other_people": 0.0
+  },
+  "th0.5_need1": {
+   "family": 0.974,
+   "junk": 0.0,
+   "other_family": 0.008,
+   "other_people": 0.0
+  },
+  "th0.45_need2": {
+   "family": 0.959,
+   "junk": 0.0,
+   "other_family": 0.0,
+   "other_people": 0.0
+  }
+ }
+}

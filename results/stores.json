@@ -1,0 +1,68 @@
+{
+ "questions": 30,
+ "has_postgres": true,
+ "real": [
+  {
+   "store": "numpy (in memory)",
+   "right_file_first": 29,
+   "median_ms": 0.0,
+   "build_s": 0.0
+  },
+  {
+   "store": "ChromaDB",
+   "right_file_first": 29,
+   "median_ms": 0.39,
+   "build_s": 1.24
+  },
+  {
+   "store": "sqlite-vec",
+   "right_file_first": 29,
+   "median_ms": 0.4,
+   "build_s": 0.04
+  },
+  {
+   "store": "Postgres + pgvector (exact)",
+   "right_file_first": 29,
+   "median_ms": 0.45,
+   "build_s": 0.38
+  },
+  {
+   "store": "Postgres + pgvector (HNSW index)",
+   "right_file_first": 29,
+   "median_ms": 0.45,
+   "build_s": 0.03
+  }
+ ],
+ "scale_50k": [
+  {
+   "store": "numpy (in memory)",
+   "median_ms": 6.11,
+   "recall_at_10": 1.0,
+   "build_s": 0.0
+  },
+  {
+   "store": "ChromaDB",
+   "median_ms": 10.67,
+   "recall_at_10": 0.92,
+   "build_s": 11.5
+  },
+  {
+   "store": "sqlite-vec",
+   "median_ms": 95.07,
+   "recall_at_10": 1.0,
+   "build_s": 2.77
+  },
+  {
+   "store": "Postgres + pgvector (exact)",
+   "median_ms": 323.2,
+   "recall_at_10": 1.0,
+   "build_s": 9.66
+  },
+  {
+   "store": "Postgres + pgvector (HNSW index)",
+   "median_ms": 21.88,
+   "recall_at_10": 0.636,
+   "build_s": 284.92
+  }
+ ]
+}

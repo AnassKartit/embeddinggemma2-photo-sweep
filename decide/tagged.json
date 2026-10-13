@@ -1,0 +1,50 @@
+{
+ "768d_k2": {
+  "tagged": 4,
+  "accuracy": 0.849,
+  "people_photos_lost": 0.115,
+  "junk_missed": 0.189
+ },
+ "768d_k5": {
+  "tagged": 10,
+  "accuracy": 0.934,
+  "people_photos_lost": 0.057,
+  "junk_missed": 0.076
+ },
+ "768d_k10": {
+  "tagged": 20,
+  "accuracy": 0.969,
+  "people_photos_lost": 0.026,
+  "junk_missed": 0.037
+ },
+ "768d_k20": {
+  "tagged": 40,
+  "accuracy": 0.978,
+  "people_photos_lost": 0.011,
+  "junk_missed": 0.034
+ },
+ "256d_k2": {
+  "tagged": 4,
+  "accuracy": 0.84,
+  "people_photos_lost": 0.119,
+  "junk_missed": 0.202
+ },
+ "256d_k5": {
+  "tagged": 10,
+  "accuracy": 0.928,
+  "people_photos_lost": 0.067,
+  "junk_missed": 0.078
+ },
+ "256d_k10": {
+  "tagged": 20,
+  "accuracy": 0.967,
+  "people_photos_lost": 0.025,
+  "junk_missed": 0.041
+ },
+ "256d_k20": {
+  "tagged": 40,
+  "accuracy": 0.977,
+  "people_photos_lost": 0.01,
+  "junk_missed": 0.038
+ }
+}

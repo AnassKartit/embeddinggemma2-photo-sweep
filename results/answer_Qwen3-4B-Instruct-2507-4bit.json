@@ -1,0 +1,76 @@
+{
+ "llm": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+ "load_s": 1.0,
+ "peak_gb": 2.98,
+ "correct": 11,
+ "of": 11,
+ "median_answer_s": 2.19,
+ "rows": [
+  {
+   "q": "how much was my latest electricity bill?",
+   "answer": "Your latest electricity bill was $131.44, as shown in the ebill_download.pdf file (modified 03 October 2026).",
+   "ok": true,
+   "answer_s": 2.08
+  },
+  {
+   "q": "how much was my internet bill?",
+   "answer": "Your internet bill was $79.99, as shown in the internet_bill_sept.pdf file.",
+   "ok": true,
+   "answer_s": 4.42
+  },
+  {
+   "q": "when does my lease end?",
+   "answer": "Your lease ends on 31 January 2027. (File: apartment_lease_2026.pdf)",
+   "ok": true,
+   "answer_s": 2.42
+  },
+  {
+   "q": "how much do I owe the dentist?",
+   "answer": "You owe $185.00, as stated in the invoice for services rendered on 12 September 2026. (File used: invoice_8812.pdf)",
+   "ok": true,
+   "answer_s": 2.31
+  },
+  {
+   "q": "what seat am I on my flight to New York?",
+   "answer": "You are in seat 14A on your flight to New York.  \nFile used: boarding_pass_PDX_JFK.pdf",
+   "ok": true,
+   "answer_s": 2.02
+  },
+  {
+   "q": "when is my doctor appointment?",
+   "answer": "Your doctor appointment is on Tuesday, 4 November 2026, at 9:30 am. (file: doctor_appointment.pdf)",
+   "ok": true,
+   "answer_s": 2.31
+  },
+  {
+   "q": "what's the guest wifi network called?",
+   "answer": "The guest Wi-Fi network is called CarterGuest. (File used: home_wifi_setup.docx)",
+   "ok": true,
+   "answer_s": 1.84
+  },
+  {
+   "q": "when is the school winter break?",
+   "answer": "The school winter break is from 21 December 2026 to 1 January 2027. (File: kids_school_calendar.pdf)",
+   "ok": true,
+   "answer_s": 2.14
+  },
+  {
+   "q": "how much was my tax refund?",
+   "answer": "Your tax refund was $1,120.  \nFile used: tax_summary_2025.pdf",
+   "ok": true,
+   "answer_s": 2.19
+  },
+  {
+   "q": "what's my monthly rent?",
+   "answer": "Your monthly rent is $2,150. (File: apartment_lease_2026.pdf)",
+   "ok": true,
+   "answer_s": 2.46
+  },
+  {
+   "q": "how long do I bake the lasagna?",
+   "answer": "Bake the lasagna for 45 minutes. (File: recipe_lasagna.docx)",
+   "ok": true,
+   "answer_s": 1.59
+  }
+ ]
+}

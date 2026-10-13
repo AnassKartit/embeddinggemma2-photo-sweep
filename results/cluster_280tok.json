@@ -1,0 +1,41 @@
+{
+ "tokens": 280,
+ "n": 158,
+ "categories": {
+  "accidental": 10,
+  "family": 29,
+  "forward": 22,
+  "other_family": 12,
+  "other_people": 40,
+  "receipt": 25,
+  "screenshot": 20
+ },
+ "kmeans_768": {
+  "ARI": 0.87,
+  "NMI": 0.869,
+  "purity": 0.911,
+  "family_in_one_cluster": 1.0,
+  "that_cluster_is_family": 0.935
+ },
+ "agglo_768": {
+  "ARI": 0.239,
+  "NMI": 0.546,
+  "purity": 0.544,
+  "family_in_one_cluster": 1.0,
+  "that_cluster_is_family": 0.259
+ },
+ "kmeans_256": {
+  "ARI": 0.76,
+  "NMI": 0.813,
+  "purity": 0.848,
+  "family_in_one_cluster": 1.0,
+  "that_cluster_is_family": 0.659
+ },
+ "agglo_256": {
+  "ARI": 0.239,
+  "NMI": 0.547,
+  "purity": 0.544,
+  "family_in_one_cluster": 1.0,
+  "that_cluster_is_family": 0.259
+ }
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Photo Sweep</title>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--line:#2a313c;--ink:#e6edf3;--mut:#8b949e;--keep:#3fb950;--clean:#f0883e;--rev:#58a6ff;--acc:#d2a8ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Inter",sans-serif}
+header{display:flex;align-items:center;gap:14px;padding:16px 28px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#0d1117ee;backdrop-filter:blur(8px);z-index:5}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.3px}.logo b{color:var(--keep)}
+.chip{font-size:12px;padding:4px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mut)}.chip.ok{color:var(--keep);border-color:#238636}
+main{padding:22px 28px;max-width:1500px;margin:auto}
+.row{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{margin:0 0 10px;font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:var(--mut)}
+input[type=text]{width:100%;background:#0d1117;border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:10px 12px;font-size:14px}
+button{background:#238636;color:#fff;border:0;border-radius:9px;padding:10px 16px;font-weight:700;font-size:14px;cursor:pointer}
+button.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}button:disabled{opacity:.4;cursor:default}
+.drop{border:1.5px dashed var(--line);border-radius:12px;height:120px;display:flex;align-items:center;justify-content:center;gap:12px;color:var(--mut);cursor:pointer}
+.drop img{height:100px;border-radius:8px}
+.bar{height:8px;background:#0d1117;border-radius:9px;overflow:hidden;margin:12px 0 6px}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#238636,#3fb950);transition:width .2s}
+.big{font-size:34px;font-weight:800;letter-spacing:-1px;white-space:nowrap}.mut{color:var(--mut);font-size:13px}
+.piles{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin:18px 0}
+.pile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;transition:.15s}
+.pile:hover{border-color:#3d4654}.pile.on{border-color:var(--ink)}
+.pile .n{font-size:26px;font-weight:800}.pile .t{font-size:13px;font-weight:600}.pile .mb{font-size:12px;color:var(--mut)}
+.pile .tag{font-size:10px;font-weight:800;letter-spacing:.6px;text-transform:uppercase}
+.keep .tag{color:var(--keep)}.clean .tag{color:var(--clean)}.review .tag{color:var(--rev)}
+.toolbar{display:flex;align-items:center;gap:10px;margin-bottom:12px}.toolbar .sp{flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.ph{position:relative;border-radius:10px;overflow:hidden;background:#000;aspect-ratio:1;border:2px solid transparent;cursor:pointer}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}.ph.sel{border-color:var(--clean)}
+.ph .cb{position:absolute;top:6px;left:6px;width:20px;height:20px;border-radius:6px;background:#0008;border:1.5px solid #fff9}
+.ph.sel .cb{background:var(--clean);border-color:var(--clean)}.ph.sel .cb:after{content:"✓";color:#fff;font-size:13px;position:absolute;left:4px;top:0}
+.ph .lab{position:absolute;bottom:0;left:0;right:0;padding:4px 7px;font-size:11px;background:linear-gradient(transparent,#000c);color:#ddd}
+.ph.moved{opacity:.25}
+.ph .heart{position:absolute;top:5px;right:6px;width:28px;height:28px;border-radius:50%;background:#000a;color:#fff;border:0;font-size:15px;padding:0;opacity:0;transition:.15s}
+.ph:hover .heart{opacity:1}.ph .heart:hover{background:#da3633}
+#search{max-width:420px}.hidden{display:none}
+.tabs{display:flex;gap:6px;background:#161b22;border:1px solid var(--line);border-radius:12px;padding:4px}
+.tab{background:transparent;color:var(--mut);padding:8px 14px}.tab.on{background:#238636;color:#fff}
+.row2{display:grid;grid-template-columns:1fr 1.6fr;gap:16px}.askbox{font-size:20px!important;padding:16px!important}
+.answer{margin-top:16px;border-color:#238636}.atag{font-size:11px;font-weight:800;letter-spacing:.8px;color:var(--keep)}
+.atext{font-size:26px;font-weight:700;margin:8px 0}
+.fcard{border-radius:10px;background:var(--panel);border:1px solid var(--line);aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px;text-align:center;cursor:pointer;position:relative}
+.fcard .ext{font-size:30px;font-weight:900;color:var(--acc)}.fcard .fn{font-size:12px;word-break:break-all;color:var(--ink)}
+.fcard .sc,.ph .sc{position:absolute;top:6px;right:8px;font-size:11px;color:var(--mut);background:#000a;padding:1px 6px;border-radius:6px}
+.fcard.top,.ph.top{outline:3px solid var(--keep)}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#238636;padding:12px 20px;border-radius:12px;font-weight:700;opacity:0;transition:.3s}
+.toast.on{opacity:1}
+</style></head><body>
+<header><div class="logo">Photo<b>Sweep</b></div>
+<span class="chip ok">● On this Mac · nothing uploaded</span><span class="chip">EmbeddingGemma 2 · 70 image tokens</span><span class="chip">YuNet + SFace faces</span>
+<span style="flex:1"></span><div class="tabs"><button class="tab on" data-v="clean">Clean photos</button><button class="tab" data-v="askv">Ask your files</button></div></header>
+<main id="clean">
+<div class="row">
+  <div class="card"><h3>1 · Folder to clean</h3><input type="text" id="folder"><div class="mut" style="margin-top:8px" id="foldernote"></div></div>
+  <div class="card"><h3>2 · One photo of your family</h3>
+    <label class="drop" id="drop"><input type="file" id="fam" accept="image/*" hidden><span id="famtxt">Drop ONE family photo, or tap ♥ on any photo after the scan</span><img id="famimg" class="hidden"></label></div>
+  <div class="card"><h3>3 · Scan</h3><button id="scan">Scan folder</button>
+    <div class="bar"><i id="barfill"></i></div><div class="mut" id="prog">Ready</div></div>
+</div>
+<div id="results" class="hidden">
+  <div class="card" style="margin-top:16px;display:flex;gap:40px;align-items:center">
+    <div><div class="big" id="free">0 MB</div><div class="mut">safe to clean · nothing deleted until you say so</div></div>
+    <div><div class="big" id="nphotos">0</div><div class="mut">photos scanned</div></div>
+    <div><div class="big" id="speed">–</div><div class="mut">ms per photo on this Mac</div></div>
+    <span style="flex:1"></span><input type="text" id="search" placeholder="Search your photos: “receipt”, “birthday cake”, “snow”…">
+  </div>
+  <div class="piles" id="piles"></div>
+  <div class="toolbar"><b id="piletitle"></b><span class="mut" id="pilenote"></span><span class="sp"></span>
+    <button class="ghost" id="selall">Select all</button><button class="ghost" id="undo">Undo</button><button id="sweep" disabled>Sweep</button></div>
+  <div class="grid" id="grid"></div>
+</div>
+</main>
+<main id="askv" class="hidden">
+  <div class="row2">
+    <div class="card"><h3>Folder</h3><input type="text" id="afolder"><div style="display:flex;gap:10px;margin-top:10px;align-items:center"><button id="aindex">Index folder</button><span class="mut" id="astate"></span></div></div>
+    <div class="card"><h3>Ask anything</h3><input type="text" id="aq" class="askbox" placeholder="Where's my boarding pass?  ·  When does my lease end?  ·  The Thanksgiving photo"></div>
+  </div>
+  <div class="card answer hidden" id="acard"><div class="atag">GEMMA 4 E4B · ON THIS MAC</div><div id="atext" class="atext"></div><div class="mut" id="ameta"></div></div>
+  <div class="grid" id="agrid" style="margin-top:16px"></div>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s); let R=null, cur="family", sel=new Set(), searchHits=null;
+const mb=b=>(b/1e6).toFixed(b>1e8?0:1)+" MB";
+async function api(u,o){const r=await fetch(u,o); if(!r.ok) throw new Error(await r.text()); return r.json()}
+function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),2600)}
+async function refresh(){const s=await api("/api/state"); $("#folder").value ||= s.folder;
+  const p=s.progress; if(p.state==="scanning"||p.state==="loading models"){ $("#barfill").style.width=(p.total?100*p.done/p.total:3)+"%";
+    $("#prog").textContent = p.state==="loading models" ? "Loading models…" : `${p.done} / ${p.total} photos · ${p.seconds}s`; setTimeout(refresh,300); return}
+  if(s.result){R=s.result; $("#barfill").style.width="100%"; $("#prog").textContent=`Done: ${R.stats.photos} photos in ${R.stats.seconds}s`; render()}}
+function render(){ $("#results").classList.remove("hidden");
+  const clean=R.piles_meta.filter(m=>m.kind==="clean").reduce((a,m)=>a+R.stats.bytes[m.key],0);
+  $("#free").textContent=mb(clean); $("#nphotos").textContent=R.stats.photos; $("#speed").textContent=R.stats.ms_per_new_photo??"cached";
+  $("#piles").innerHTML=R.piles_meta.map(m=>`<div class="pile ${m.kind} ${m.key===cur&&!searchHits?"on":""}" data-k="${m.key}">
+    <div class="tag">${m.kind}</div><div class="n">${R.piles[m.key].length}</div><div class="t">${m.title}</div><div class="mb">${mb(R.stats.bytes[m.key])}</div></div>`).join("");
+  document.querySelectorAll(".pile").forEach(e=>e.onclick=()=>{cur=e.dataset.k; searchHits=null; $("#search").value=""; sel.clear(); render()});
+  const byId=Object.fromEntries(R.photos.map(p=>[p.id,p])); const meta=R.piles_meta.find(m=>m.key===cur);
+  const ids=searchHits ? searchHits.map(h=>h.id) : R.piles[cur];
+  $("#piletitle").textContent=searchHits?`Search: “${$("#search").value}”`:meta.title;
+  $("#pilenote").textContent=searchHits?`${searchHits.length} best matches`:{keep:" · kept, never swept",clean:" · safe to sweep",review:" · check before sweeping"}[meta.kind];
+  $("#grid").innerHTML=ids.map(id=>{const p=byId[id]; const lab=p.pile==="family"?`family · ${p.family_score}`:p.pile==="duplicates"?"copy of another photo":p.name;
+    return `<div class="ph ${sel.has(id)?"sel":""} ${p.moved?"moved":""}" data-id="${id}"><img loading="lazy" src="/api/thumb/${id}"><div class="cb"></div><button class="heart" title="This is my family">♥</button><div class="lab">${lab}</div></div>`}).join("");
+  document.querySelectorAll(".ph .heart").forEach(b=>b.onclick=async ev=>{ev.stopPropagation(); const id=b.parentElement.dataset.id;
+    try{const r=await api("/api/family_from/"+id,{method:"POST"}); $("#famimg").src="/api/family.jpg?"+Date.now(); $("#famimg").classList.remove("hidden");
+    $("#famtxt").textContent=`${r.faces} faces learned`; toast(`Family set from 1 photo · ${r.faces} faces · re-sorting…`); cur="family";
+    await api("/api/scan",{method:"POST"}); setTimeout(refresh,200)}catch(e){toast("No face found in that photo")}});
+  document.querySelectorAll(".ph").forEach(e=>e.onclick=()=>{const id=e.dataset.id; if(byId[id].pile==="family"&&!searchHits) return; sel.has(id)?sel.delete(id):sel.add(id); e.classList.toggle("sel")
+    ;updSweep()}); updSweep()}
+function updSweep(){const byId=Object.fromEntries(R.photos.map(p=>[p.id,p])); const b=[...sel].reduce((a,id)=>a+byId[id].bytes,0);
+  $("#sweep").disabled=!sel.size; $("#sweep").textContent=sel.size?`Sweep ${sel.size} photos · ${mb(b)}`:"Sweep"}
+$("#selall").onclick=()=>{ if(cur==="family"&&!searchHits) return; (searchHits?searchHits.map(h=>h.id):R.piles[cur]).forEach(id=>sel.add(id)); render()};
+$("#sweep").onclick=async()=>{const r=await api("/api/sweep",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({ids:[...sel]})});
+  toast(`Moved ${r.moved} photos to _Sweep · ${mb(r.freed_bytes)} freed`); sel.clear(); await refreshState()};
+$("#undo").onclick=async()=>{const r=await api("/api/undo",{method:"POST"}); toast(`Put back ${r.restored} photos`); await refreshState()};
+async function refreshState(){const s=await api("/api/state"); R=s.result; render()}
+$("#fam").onchange=async e=>{const f=e.target.files[0]; if(!f) return; const fd=new FormData(); fd.append("file",f);
+  try{const r=await api("/api/family",{method:"POST",body:fd}); $("#famimg").src="/api/family.jpg?"+Date.now(); $("#famimg").classList.remove("hidden");
+  $("#famtxt").textContent=`${r.faces} faces learned`;}catch(err){toast("No face found in that photo")}};
+$("#drop").ondragover=e=>e.preventDefault(); $("#drop").ondrop=e=>{e.preventDefault(); $("#fam").files=e.dataTransfer.files; $("#fam").onchange({target:$("#fam")})};
+$("#folder").onchange=async()=>{try{await api("/api/folder",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({folder:$("#folder").value})}); $("#foldernote").textContent="Folder set"}catch(e){$("#foldernote").textContent="Not a folder"}};
+$("#scan").onclick=async()=>{await api("/api/scan",{method:"POST"}); sel.clear(); setTimeout(refresh,200)};
+let st; $("#search").oninput=e=>{clearTimeout(st); const q=e.target.value.trim(); st=setTimeout(async()=>{ if(!q){searchHits=null; render(); return}
+  const r=await api("/api/search?q="+encodeURIComponent(q)); searchHits=r.hits; sel.clear(); render(); $("#pilenote").textContent=` · ${r.hits.length} best matches in ${r.ms} ms`},250)};
+document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x===t));
+  ["clean","askv"].forEach(v=>$("#"+v).classList.toggle("hidden",v!==t.dataset.v)); if(t.dataset.v==="askv") astate()});
+async function astate(){const s=await api("/api/ask/state"); $("#afolder").value ||= s.folder;
+  $("#astate").textContent = s.state==="ready" ? `${s.files} files indexed in ${s.index_s}s` : s.state==="indexing" ? "Indexing…" : "Not indexed yet";
+  if(s.state==="indexing") setTimeout(astate,500)}
+$("#aindex").onclick=async()=>{await api("/api/ask/index",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({folder:$("#afolder").value})}); setTimeout(astate,300)};
+const IMGX=/\.(jpe?g|png|webp|heic)$/i;
+$("#aq").onkeydown=async e=>{ if(e.key!=="Enter") return; const q=e.target.value.trim(); if(!q) return;
+  $("#acard").classList.remove("hidden"); $("#atext").textContent="Thinking…"; $("#ameta").textContent="";
+  const s=await api("/api/ask?answer=0&q="+encodeURIComponent(q)); showHits(s);
+  const r=await api("/api/ask?q="+encodeURIComponent(q)); $("#atext").textContent=r.answer; $("#ameta").textContent = r.answer_s ? `found in ${r.search_ms} ms (EmbeddingGemma 2) · answered in ${r.answer_s} s (Gemma 4 E4B) · nothing left this Mac`
+    : `found in ${r.search_ms} ms (EmbeddingGemma 2) · a photo: no language model needed · nothing left this Mac`;
+  $(".atag").textContent = r.answer_s ? "GEMMA 4 E4B · ON THIS MAC" : "EMBEDDINGGEMMA 2 · ON THIS MAC"};
+function showHits(s){ $("#agrid").innerHTML=s.hits.map((h,i)=>IMGX.test(h.name)
+  ? `<div class="ph ${i?"":"top"}" data-n="${h.name}"><img src="/api/ask/thumb/${encodeURIComponent(h.name)}"><span class="sc">${h.score}</span><div class="lab">${h.name}</div></div>`
+  : `<div class="fcard ${i?"":"top"}" data-n="${h.name}"><span class="sc">${h.score}</span><div class="ext">${h.name.split(".").pop().toUpperCase()}</div><div class="fn">${h.name}</div></div>`).join("");
+  document.querySelectorAll("#agrid [data-n]").forEach(e=>e.onclick=()=>api("/api/ask/reveal/"+encodeURIComponent(e.dataset.n),{method:"POST"}))}
+refresh();
+</script></body></html>

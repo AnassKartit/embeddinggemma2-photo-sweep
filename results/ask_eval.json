@@ -1,0 +1,868 @@
+{
+ "files": 62,
+ "vectors": 62,
+ "index_s": 5.0,
+ "questions": 30,
+ "median_query_ms": 33.8,
+ "gemma@1": 30,
+ "gemma@5": 30,
+ "spotlight@1": 5,
+ "spotlight@5": 6,
+ "spotlight_keywords@1": 11,
+ "spotlight_keywords@5": 12,
+ "name@1": 12,
+ "name@5": 15,
+ "rows": [
+  {
+   "q": "where's my latest electricity bill?",
+   "want": [
+    "ebill_download.pdf"
+   ],
+   "gemma": [
+    "ebill_download.pdf",
+    "CascadePower_eBill.pdf",
+    "power_bill_march_2024.pdf",
+    "internet_bill_sept.pdf",
+    "invoice_8812.pdf"
+   ],
+   "gemma_ms": 37.4,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [
+    "CascadePower_eBill.pdf",
+    "ebill_download.pdf",
+    "internet_bill_sept.pdf",
+    "power_bill_march_2024.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": true
+  },
+  {
+   "q": "my electricity bill from 2024",
+   "want": [
+    "power_bill_march_2024.pdf"
+   ],
+   "gemma": [
+    "power_bill_march_2024.pdf",
+    "CascadePower_eBill.pdf",
+    "ebill_download.pdf",
+    "IMG_2003.jpg",
+    "internet_bill_sept.pdf"
+   ],
+   "gemma_ms": 37.6,
+   "spotlight": [],
+   "spotlight_keywords": [
+    "power_bill_march_2024.pdf"
+   ],
+   "name": [
+    "CascadePower_eBill.pdf",
+    "ebill_download.pdf",
+    "internet_bill_sept.pdf",
+    "power_bill_march_2024.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": false,
+   "name@5": true
+  },
+  {
+   "q": "the dentist bill",
+   "want": [
+    "invoice_8812.pdf"
+   ],
+   "gemma": [
+    "invoice_8812.pdf",
+    "IMG_2003.jpg",
+    "IMG_2004.jpg",
+    "IMG_2005.jpg",
+    "IMG_2002.jpg"
+   ],
+   "gemma_ms": 31.6,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [
+    "CascadePower_eBill.pdf",
+    "ebill_download.pdf",
+    "internet_bill_sept.pdf",
+    "power_bill_march_2024.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "how much was my internet bill",
+   "want": [
+    "internet_bill_sept.pdf"
+   ],
+   "gemma": [
+    "internet_bill_sept.pdf",
+    "CascadePower_eBill.pdf",
+    "power_bill_march_2024.pdf",
+    "ebill_download.pdf",
+    "invoice_8812.pdf"
+   ],
+   "gemma_ms": 43.5,
+   "spotlight": [],
+   "spotlight_keywords": [
+    "internet_bill_sept.pdf"
+   ],
+   "name": [
+    "CascadePower_eBill.pdf",
+    "ebill_download.pdf",
+    "internet_bill_sept.pdf",
+    "power_bill_march_2024.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": false,
+   "name@5": true
+  },
+  {
+   "q": "my flight to New York",
+   "want": [
+    "boarding_pass_PDX_JFK.pdf"
+   ],
+   "gemma": [
+    "boarding_pass_PDX_JFK.pdf",
+    "IMG_1001.jpg",
+    "doctor_appointment.pdf",
+    "IMG_2001.jpg",
+    "Screenshot 2026-05-12 at 9.42.12 PM.png"
+   ],
+   "gemma_ms": 49.1,
+   "spotlight": [],
+   "spotlight_keywords": [
+    "boarding_pass_PDX_JFK.pdf"
+   ],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "when does my lease end",
+   "want": [
+    "apartment_lease_2026.pdf"
+   ],
+   "gemma": [
+    "apartment_lease_2026.pdf",
+    "internet_bill_sept.pdf",
+    "invoice_8812.pdf",
+    "kids_school_calendar.pdf",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png"
+   ],
+   "gemma_ms": 30.7,
+   "spotlight": [],
+   "spotlight_keywords": [
+    "apartment_lease_2026.pdf"
+   ],
+   "name": [
+    "apartment_lease_2026.pdf",
+    "kids_school_calendar.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "my rental contract",
+   "want": [
+    "apartment_lease_2026.pdf"
+   ],
+   "gemma": [
+    "apartment_lease_2026.pdf",
+    "internet_bill_sept.pdf",
+    "Screenshot 2026-08-15 at 9.45.12 PM.png",
+    "invoice_8812.pdf",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png"
+   ],
+   "gemma_ms": 30.6,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "tax document",
+   "want": [
+    "tax_summary_2025.pdf"
+   ],
+   "gemma": [
+    "tax_summary_2025.pdf",
+    "IMG_2003.jpg",
+    "invoice_8812.pdf",
+    "IMG_2005.jpg",
+    "Zoom.pkg"
+   ],
+   "gemma_ms": 38.3,
+   "spotlight": [
+    "power_bill_march_2024.pdf",
+    "CascadePower_eBill.pdf",
+    "ebill_download.pdf",
+    "tax_summary_2025.pdf"
+   ],
+   "spotlight_keywords": [
+    "power_bill_march_2024.pdf",
+    "CascadePower_eBill.pdf",
+    "ebill_download.pdf",
+    "tax_summary_2025.pdf"
+   ],
+   "name": [
+    "tax_summary_2025.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": true,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "car insurance",
+   "want": [
+    "car_insurance_card.pdf"
+   ],
+   "gemma": [
+    "car_insurance_card.pdf",
+    "IMG_1025.jpg",
+    "invoice_8812.pdf",
+    "Screenshot 2026-05-12 at 9.42.12 PM.png",
+    "Screenshot 2026-07-14 at 9.44.12 PM.png"
+   ],
+   "gemma_ms": 38.7,
+   "spotlight": [
+    "car_insurance_card.pdf"
+   ],
+   "spotlight_keywords": [
+    "car_insurance_card.pdf"
+   ],
+   "name": [
+    "car_insurance_card.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": true,
+   "spotlight@5": true,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "grandpa's lasagna recipe",
+   "want": [
+    "recipe_lasagna.docx"
+   ],
+   "gemma": [
+    "recipe_lasagna.docx",
+    "IMG_1021.jpg",
+    "IMG_1003.jpg",
+    "IMG_1029.jpg",
+    "IMG_1018.jpg"
+   ],
+   "gemma_ms": 34.0,
+   "spotlight": [
+    "recipe_lasagna.docx"
+   ],
+   "spotlight_keywords": [
+    "recipe_lasagna.docx"
+   ],
+   "name": [
+    "recipe_lasagna.docx"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": true,
+   "spotlight@5": true,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "notes from the planning meeting",
+   "want": [
+    "meeting_notes_q3.docx"
+   ],
+   "gemma": [
+    "meeting_notes_q3.docx",
+    "Screenshot 2026-05-12 at 9.42.12 PM.png",
+    "IMG_2005.jpg",
+    "Screenshot 2026-08-15 at 9.45.12 PM.png",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png"
+   ],
+   "gemma_ms": 26.2,
+   "spotlight": [],
+   "spotlight_keywords": [
+    "meeting_notes_q3.docx"
+   ],
+   "name": [
+    "meeting_notes_q3.docx"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "when are the school holidays",
+   "want": [
+    "kids_school_calendar.pdf"
+   ],
+   "gemma": [
+    "kids_school_calendar.pdf",
+    "IMG_1026.jpg",
+    "IMG_1008.jpg",
+    "IMG_1023.jpg",
+    "IMG_1018.jpg"
+   ],
+   "gemma_ms": 27.7,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [
+    "kids_school_calendar.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "dishwasher warranty",
+   "want": [
+    "dishwasher_warranty.pdf"
+   ],
+   "gemma": [
+    "dishwasher_warranty.pdf",
+    "IMG_2003.jpg",
+    "invoice_8812.pdf",
+    "IMG_1023.jpg",
+    "IMG_1021.jpg"
+   ],
+   "gemma_ms": 27.4,
+   "spotlight": [
+    "dishwasher_warranty.pdf"
+   ],
+   "spotlight_keywords": [
+    "dishwasher_warranty.pdf"
+   ],
+   "name": [
+    "dishwasher_warranty.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": true,
+   "spotlight@5": true,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "concert tickets",
+   "want": [
+    "concert_tickets.pdf"
+   ],
+   "gemma": [
+    "concert_tickets.pdf",
+    "IMG_2001.jpg",
+    "IMG_2002.jpg",
+    "IMG_2003.jpg",
+    "boarding_pass_PDX_JFK.pdf"
+   ],
+   "gemma_ms": 41.0,
+   "spotlight": [
+    "concert_tickets.pdf"
+   ],
+   "spotlight_keywords": [
+    "concert_tickets.pdf"
+   ],
+   "name": [
+    "concert_tickets.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": true,
+   "spotlight@5": true,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "doctor appointment",
+   "want": [
+    "doctor_appointment.pdf"
+   ],
+   "gemma": [
+    "doctor_appointment.pdf",
+    "invoice_8812.pdf",
+    "Screenshot 2026-05-12 at 9.42.12 PM.png",
+    "Screenshot 2026-08-15 at 9.45.12 PM.png",
+    "Zoom.pkg"
+   ],
+   "gemma_ms": 26.0,
+   "spotlight": [
+    "doctor_appointment.pdf"
+   ],
+   "spotlight_keywords": [
+    "doctor_appointment.pdf"
+   ],
+   "name": [
+    "doctor_appointment.pdf"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": true,
+   "spotlight@5": true,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "wifi password",
+   "want": [
+    "home_wifi_setup.docx"
+   ],
+   "gemma": [
+    "home_wifi_setup.docx",
+    "internet_bill_sept.pdf",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png",
+    "Screenshot 2026-05-12 at 9.42.12 PM.png",
+    "Screenshot 2026-08-15 at 9.45.12 PM.png"
+   ],
+   "gemma_ms": 30.0,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [
+    "home_wifi_setup.docx"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "the Zoom installer",
+   "want": [
+    "Zoom.pkg"
+   ],
+   "gemma": [
+    "Zoom.pkg",
+    "home_wifi_setup.docx",
+    "VLC-3.1.dmg",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png",
+    "IMG_1018.jpg"
+   ],
+   "gemma_ms": 33.8,
+   "spotlight": [],
+   "spotlight_keywords": [
+    "Zoom.pkg"
+   ],
+   "name": [
+    "Zoom.pkg"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": true,
+   "spotlight_keywords@5": true,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "the Thanksgiving photo",
+   "want": [
+    "IMG_1029.jpg"
+   ],
+   "gemma": [
+    "IMG_1029.jpg",
+    "IMG_1026.jpg",
+    "IMG_1018.jpg",
+    "IMG_1027.jpg",
+    "boarding_pass_PDX_JFK.pdf"
+   ],
+   "gemma_ms": 34.6,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "grandpa fishing",
+   "want": [
+    "IMG_1015.jpg"
+   ],
+   "gemma": [
+    "IMG_1015.jpg",
+    "IMG_1007.jpg",
+    "IMG_1018.jpg",
+    "IMG_1020.jpg",
+    "IMG_1023.jpg"
+   ],
+   "gemma_ms": 33.6,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "the snowman photo",
+   "want": [
+    "IMG_1027.jpg"
+   ],
+   "gemma": [
+    "IMG_1027.jpg",
+    "IMG_1018.jpg",
+    "Screenshot 2026-08-15 at 9.45.12 PM.png",
+    "IMG_1008.jpg",
+    "IMG_1026.jpg"
+   ],
+   "gemma_ms": 37.5,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "birthday cake",
+   "want": [
+    "IMG_1003.jpg"
+   ],
+   "gemma": [
+    "IMG_1003.jpg",
+    "Screenshot 2026-07-14 at 9.44.12 PM.png",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png",
+    "Screenshot 2026-04-11 at 9.41.12 PM.png",
+    "Screenshot 2026-08-15 at 9.45.12 PM.png"
+   ],
+   "gemma_ms": 28.0,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "graduation photo",
+   "want": [
+    "IMG_1014.jpg"
+   ],
+   "gemma": [
+    "IMG_1014.jpg",
+    "IMG_1026.jpg",
+    "Zoom.pkg",
+    "IMG_1009.jpg",
+    "IMG_1028.jpg"
+   ],
+   "gemma_ms": 35.4,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "the dog in the park",
+   "want": [
+    "IMG_1012.jpg"
+   ],
+   "gemma": [
+    "IMG_1012.jpg",
+    "IMG_1018.jpg",
+    "apartment_lease_2026.pdf",
+    "IMG_1028.jpg",
+    "IMG_1002.jpg"
+   ],
+   "gemma_ms": 35.2,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "camping trip",
+   "want": [
+    "IMG_1007.jpg"
+   ],
+   "gemma": [
+    "IMG_1007.jpg",
+    "IMG_1018.jpg",
+    "Zoom.pkg",
+    "IMG_1013.jpg",
+    "IMG_1001.jpg"
+   ],
+   "gemma_ms": 26.8,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "day at the beach",
+   "want": [
+    "IMG_1004.jpg"
+   ],
+   "gemma": [
+    "IMG_1004.jpg",
+    "IMG_1023.jpg",
+    "IMG_1013.jpg",
+    "IMG_1012.jpg",
+    "IMG_1018.jpg"
+   ],
+   "gemma_ms": 49.4,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "fourth of july barbecue",
+   "want": [
+    "IMG_1020.jpg"
+   ],
+   "gemma": [
+    "IMG_1020.jpg",
+    "IMG_1007.jpg",
+    "IMG_1017.jpg",
+    "IMG_1018.jpg",
+    "IMG_1027.jpg"
+   ],
+   "gemma_ms": 30.6,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "a shop receipt",
+   "want": [
+    "IMG_2001.jpg",
+    "IMG_2002.jpg",
+    "IMG_2003.jpg",
+    "IMG_2004.jpg",
+    "IMG_2005.jpg"
+   ],
+   "gemma": [
+    "IMG_2003.jpg",
+    "IMG_2002.jpg",
+    "IMG_2004.jpg",
+    "IMG_2005.jpg",
+    "IMG_2001.jpg"
+   ],
+   "gemma_ms": 31.6,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "screenshot of a chat",
+   "want": [
+    "Screenshot 2026-06-13 at 9.43.12 PM.png",
+    "Screenshot 2026-08-15 at 9.45.12 PM.png",
+    "Screenshot 2026-07-14 at 9.44.12 PM.png",
+    "Screenshot 2026-04-11 at 9.41.12 PM.png",
+    "Screenshot 2026-05-12 at 9.42.12 PM.png"
+   ],
+   "gemma": [
+    "Screenshot 2026-08-15 at 9.45.12 PM.png",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png",
+    "Screenshot 2026-04-11 at 9.41.12 PM.png",
+    "Screenshot 2026-05-12 at 9.42.12 PM.png",
+    "Screenshot 2026-07-14 at 9.44.12 PM.png"
+   ],
+   "gemma_ms": 32.5,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [
+    "Screenshot 2026-04-11 at 9.41.12 PM.png",
+    "Screenshot 2026-05-12 at 9.42.12 PM.png",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png",
+    "Screenshot 2026-07-14 at 9.44.12 PM.png",
+    "Screenshot 2026-08-15 at 9.45.12 PM.png"
+   ],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": true,
+   "name@5": true
+  },
+  {
+   "q": "a funny meme",
+   "want": [
+    "IMG-20260814-WA0004.jpg",
+    "IMG-20260612-WA0002.jpg",
+    "IMG-20260511-WA0001.jpg"
+   ],
+   "gemma": [
+    "IMG-20260511-WA0001.jpg",
+    "IMG-20260612-WA0002.jpg",
+    "IMG-20260713-WA0003.jpg",
+    "Screenshot 2026-06-13 at 9.43.12 PM.png",
+    "Zoom.pkg"
+   ],
+   "gemma_ms": 29.2,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  },
+  {
+   "q": "christmas morning",
+   "want": [
+    "IMG_1008.jpg"
+   ],
+   "gemma": [
+    "IMG_1008.jpg",
+    "IMG-20260814-WA0004.jpg",
+    "IMG-20260511-WA0001.jpg",
+    "IMG_1027.jpg",
+    "IMG_1029.jpg"
+   ],
+   "gemma_ms": 37.5,
+   "spotlight": [],
+   "spotlight_keywords": [],
+   "name": [],
+   "gemma@1": true,
+   "gemma@5": true,
+   "spotlight@1": false,
+   "spotlight@5": false,
+   "spotlight_keywords@1": false,
+   "spotlight_keywords@5": false,
+   "name@1": false,
+   "name@5": false
+  }
+ ]
+}

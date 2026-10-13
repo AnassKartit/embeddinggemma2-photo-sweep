@@ -1,0 +1,308 @@
+[
+ {
+  "out": "data/family/fam_thanksgiving.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the whole family around a Thanksgiving turkey dinner, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_july4.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: a Fourth of July backyard barbecue, the father grilling, kids with sparklers at dusk, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_halloween.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the kids in Halloween costumes with the parents on a porch with pumpkins, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_christmas.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the family opening presents by a Christmas tree in pajamas, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_beach.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the parents and kids on a California beach, wind in hair, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_baseball.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the son in a Little League uniform at bat, the father cheering, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_roadtrip.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: a selfie by the mother in a car on a road trip, everyone squeezed in, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_bday.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the son blowing candles on a birthday cake, family clapping, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_school.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the son with a backpack in front of a yellow school bus, first day of school, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_graduation.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the daughter in a cap and gown with her parents and grandfather, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_snow.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the family building a snowman in the front yard, winter coats, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_hike.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the family hiking in a pine forest national park, wide shot, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_camping.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the family around a campfire roasting marshmallows at night, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_pool.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the kids jumping into a backyard pool, splash, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_grandpa_fishing.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the grandfather and the son fishing on a lake dock, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_kitchen.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the mother and daughter baking cookies, flour everywhere, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_soccer.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the daughter playing soccer, mid-kick, parents on the sideline, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_fair.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the family at a county fair with a ferris wheel behind, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_couch.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the family watching a movie on the couch with popcorn, dim TV light, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_homework.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the father helping the son with homework at the kitchen table, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_mirror.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the daughter taking a mirror selfie in her bedroom, 9:16",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_date_night.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the father and mother alone at a diner booth, smiling, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_grandpa_portrait.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: a close portrait of the grandfather laughing on a porch swing, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_blurry_kid.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: a blurry, out-of-focus but real photo of the son running toward the camera, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_airport.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the family with suitcases at an airport gate, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_bike.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the son learning to ride a bike with the father holding the seat, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_dog_park.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the kids playing with a golden retriever in a park, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_church.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the family in Sunday clothes on the steps of a small white church, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_rain.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: the mother and son under an umbrella in the rain, 3:4",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/family/fam_group_party.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandfather, father, mother, teenage daughter, young son); keep their faces, hair and ages exactly, but dress them in DIFFERENT clothes that fit the scene (never the sheet outfits). Candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text, no brands. Scene: a big backyard party with the five of them plus three unknown neighbours, 4:3",
+  "refs": [
+   "data/refs/us_family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/junk/codex_greet_morning1.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a 'Good morning, have a blessed day' forward with roses, coffee cup and sparkles, square"
+ },
+ {
+  "out": "data/junk/codex_greet_sunday.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a 'Have a blessed Sunday' forward with a sunrise and a cross, portrait"
+ },
+ {
+  "out": "data/junk/codex_greet_thanks.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a 'Happy Thanksgiving' greeting card with pumpkins and autumn leaves, square"
+ },
+ {
+  "out": "data/junk/codex_greet_xmas.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a 'Merry Christmas' forward with an illustrated cartoon family and a snowy house, square"
+ },
+ {
+  "out": "data/junk/codex_greet_night.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a 'Good night, sweet dreams' forward with a moon and a teddy bear, portrait"
+ },
+ {
+  "out": "data/junk/codex_greet_bday.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a generic 'Happy Birthday' e-card with balloons and confetti, square"
+ },
+ {
+  "out": "data/junk/codex_meme_cat.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): an internet meme: a surprised cat photo with bold white Impact-font captions about Monday mornings, square"
+ },
+ {
+  "out": "data/junk/codex_meme_office.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a two-panel reaction meme about developers and production bugs, bold captions, square"
+ },
+ {
+  "out": "data/junk/codex_meme_sports.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a sports fan meme about a missed field goal, crying fan photo and big caption, square"
+ },
+ {
+  "out": "data/junk/codex_quote_motiv.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a motivational quote image: mountain at sunrise with 'Success is not final, failure is not fatal', portrait"
+ },
+ {
+  "out": "data/junk/codex_quote_bible.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a Bible verse card on a soft watercolor background, square"
+ },
+ {
+  "out": "data/junk/codex_news_forward.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a forwarded 'BREAKING NEWS' graphic about a fake gas price change with a red banner, portrait"
+ },
+ {
+  "out": "data/junk/codex_promo_flyer.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a fictional supermarket weekly ad flyer with product photos, prices in dollars and '-30%' stickers, portrait"
+ },
+ {
+  "out": "data/junk/codex_promo_phone.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a phone store ad for a new fictional smartphone with price and a phone number, portrait"
+ },
+ {
+  "out": "data/junk/codex_chain_msg.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a chain-message image 'Share this with 10 people or...' on a dramatic background, portrait"
+ },
+ {
+  "out": "data/junk/codex_health_tip.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a viral health tip infographic 'Drink lemon water every morning' with icons, portrait"
+ },
+ {
+  "out": "data/junk/codex_recipe_card.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a forwarded recipe card for mac and cheese with ingredient list and photo, portrait"
+ },
+ {
+  "out": "data/junk/codex_viral_car.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a viral photo of a pickup truck stuck in mud with a funny caption, 4:3"
+ },
+ {
+  "out": "data/junk/codex_wedding_invite.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a digital wedding invitation with names, date and a gold floral frame, portrait"
+ },
+ {
+  "out": "data/junk/codex_lost_cat.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a 'Missing cat' poster with a cat photo and phone number, portrait"
+ },
+ {
+  "out": "data/junk/codex_sticker_pack.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a grid of colourful emoji-like chat stickers on white, square"
+ },
+ {
+  "out": "data/junk/codex_bank_offer.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a scammy loan offer graphic with big numbers and a call-to-action button, portrait"
+ },
+ {
+  "out": "data/junk/codex_coupon.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a fast food coupon '2 for $5' with a burger photo, fictional brand, landscape"
+ },
+ {
+  "out": "data/junk/codex_cartoon_joke.png",
+  "prompt": "Create a realistic image of the kind people forward in family group chats (fictional, no real brands or real people): a cartoon comic strip joke with three panels and speech bubbles, landscape"
+ }
+]

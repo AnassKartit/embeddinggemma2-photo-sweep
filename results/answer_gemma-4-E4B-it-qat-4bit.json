@@ -1,0 +1,76 @@
+{
+ "llm": "mlx-community/gemma-4-E4B-it-qat-4bit",
+ "load_s": 6.8,
+ "peak_gb": 6.49,
+ "correct": 11,
+ "of": 11,
+ "median_answer_s": 2.03,
+ "rows": [
+  {
+   "q": "how much was my latest electricity bill?",
+   "answer": "The total due on the latest electricity bill was $131.44. ebill_download.pdf",
+   "ok": true,
+   "answer_s": 1.99
+  },
+  {
+   "q": "how much was my internet bill?",
+   "answer": "Your internet bill was $79.99. (internet_bill_sept.pdf)",
+   "ok": true,
+   "answer_s": 3.33
+  },
+  {
+   "q": "when does my lease end?",
+   "answer": "The lease ends on 31 January 2027. apartment_lease_2026.pdf",
+   "ok": true,
+   "answer_s": 2.0
+  },
+  {
+   "q": "how much do I owe the dentist?",
+   "answer": "The total due is $185.00 according to invoice_8812.pdf.",
+   "ok": true,
+   "answer_s": 1.82
+  },
+  {
+   "q": "what seat am I on my flight to New York?",
+   "answer": "You are on seat 14A on your flight to New York (JFK). boarding_pass_PDX_JFK.pdf",
+   "ok": true,
+   "answer_s": 2.15
+  },
+  {
+   "q": "when is my doctor appointment?",
+   "answer": "Your doctor appointment is on Tuesday 4 November 2026 at 9:30 am. (doctor_appointment.pdf)",
+   "ok": true,
+   "answer_s": 2.3
+  },
+  {
+   "q": "what's the guest wifi network called?",
+   "answer": "The guest network is called CarterGuest. (home_wifi_setup.docx)",
+   "ok": true,
+   "answer_s": 1.6
+  },
+  {
+   "q": "when is the school winter break?",
+   "answer": "The school winter break is from 21 December 2026 to 1 January 2027. kids_school_calendar.pdf",
+   "ok": true,
+   "answer_s": 2.12
+  },
+  {
+   "q": "how much was my tax refund?",
+   "answer": "The tax refund was $1,120. (tax_summary_2025.pdf)",
+   "ok": true,
+   "answer_s": 2.03
+  },
+  {
+   "q": "what's my monthly rent?",
+   "answer": "The monthly rent is $2,150. (apartment_lease_2026.pdf)",
+   "ok": true,
+   "answer_s": 2.06
+  },
+  {
+   "q": "how long do I bake the lasagna?",
+   "answer": "You bake the lasagna for 45 minutes at 375 F. (recipe_lasagna.docx)",
+   "ok": true,
+   "answer_s": 1.72
+  }
+ ]
+}

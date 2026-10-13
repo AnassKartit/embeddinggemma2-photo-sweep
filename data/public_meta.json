@@ -1,0 +1,367 @@
+[
+ {
+  "path": "data/junk/receipt/cord_00.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_01.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_02.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_03.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_04.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_05.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_06.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_07.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_08.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_09.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_10.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_11.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_12.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_13.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_14.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_15.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_16.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_17.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_18.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_19.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_20.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_21.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_22.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_23.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/junk/receipt/cord_24.jpg",
+  "label": "receipt",
+  "source": "cord-v2"
+ },
+ {
+  "path": "data/other_people/flickr_00.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Two people in the photo are playing the guitar and the other is poking at him."
+ },
+ {
+  "path": "data/other_people/flickr_01.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "An asian man wearing a black suit stands near a dark-haired woman and a brown-haired woman."
+ },
+ {
+  "path": "data/other_people/flickr_02.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Five ballet dancers caught mid jump in a dancing studio with sunlight coming through a window."
+ },
+ {
+  "path": "data/other_people/flickr_03.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man with reflective safety clothes and ear protection drives a John Deere tractor on a road."
+ },
+ {
+  "path": "data/other_people/flickr_04.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Some women are standing in front of a bus with buildings behind it."
+ },
+ {
+  "path": "data/other_people/flickr_05.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man in a blue hard hat and orange safety vest stands in an intersection while holding a flag."
+ },
+ {
+  "path": "data/other_people/flickr_06.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Young man in jacket holding a toothpick with something on the end of it"
+ },
+ {
+  "path": "data/other_people/flickr_07.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A tan man with a backwards hat looks at the camera while walking through a factory."
+ },
+ {
+  "path": "data/other_people/flickr_08.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A caucasian man wearing a short-sleeved black shirt and a dark-skinned woman wearing a sleeveless dress are working at a conveyor."
+ },
+ {
+  "path": "data/other_people/flickr_09.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man in a red long-sleeved shirt bikes over a body of water on a bridge."
+ },
+ {
+  "path": "data/other_people/flickr_10.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A young gymnast, jumps high in the air, while performing on a balance beam."
+ },
+ {
+  "path": "data/other_people/flickr_11.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man in black attire shovels snow into the street, disregarding all public safety."
+ },
+ {
+  "path": "data/other_people/flickr_12.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Two men sitting on the roof of a house while another one stands on a ladder."
+ },
+ {
+  "path": "data/other_people/flickr_13.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Boy in brown shirt with headphones on sits on woman's shoulders in a crowd."
+ },
+ {
+  "path": "data/other_people/flickr_14.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "During a gay pride parade in an Asian city, some people hold up rainbow flags to show support."
+ },
+ {
+  "path": "data/other_people/flickr_15.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A toddler in a blue shirt with red shorts and hat looks out from behind a fenced in area of a brick patio."
+ },
+ {
+  "path": "data/other_people/flickr_16.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man is cooking what appears to be green beans in a grill basket on a grill with a yellow lab standing by him while someone takes a picture from above."
+ },
+ {
+  "path": "data/other_people/flickr_17.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man in the foreground wearing a white shirt and black pants riding a bicycle with a basket in a busy street."
+ },
+ {
+  "path": "data/other_people/flickr_18.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man wearing a gray jacket and blue work pants is standing in a hole in the ground"
+ },
+ {
+  "path": "data/other_people/flickr_19.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man in a bandanna and a dirty t-shirt, and a woman in a graphic t-shirt, are standing next to a oblong hole with smoke coming out."
+ },
+ {
+  "path": "data/other_people/flickr_20.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "This little baby girl dressed whimsically in striped pantaloons is pictured so that one must ask which is bigger, her feet or her sleepy smile."
+ },
+ {
+  "path": "data/other_people/flickr_21.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A group of men and women are hiking through a dried up river bed littered with large rocks, which runs between two rocky walls in a dense green forest."
+ },
+ {
+  "path": "data/other_people/flickr_22.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man with a badge is standing on a wood floor next to a structure."
+ },
+ {
+  "path": "data/other_people/flickr_23.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Two separate women, one wearing a white top and black pants, the other wearing all black and a pair of pink flip-flops, kneel on a gray brick sidewalk path in front of green and red bushes."
+ },
+ {
+  "path": "data/other_people/flickr_24.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A young child wearing a blue shirt and sandals playing with a red toy while sitting on the floor."
+ },
+ {
+  "path": "data/other_people/flickr_25.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Two Asian girls laughing, as the girl on the right holds an instrument."
+ },
+ {
+  "path": "data/other_people/flickr_26.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Several people jogging outside on a sunny day in what seems to be a neighborhood, could be part of a marathon."
+ },
+ {
+  "path": "data/other_people/flickr_27.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "It looks as though a soldier is sleeping in a car on his way home after a deployment."
+ },
+ {
+  "path": "data/other_people/flickr_28.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man in an orange hard hat and vest looks at an object in his hand while the man next to him stands on a ladder in order to reach the ceiling."
+ },
+ {
+  "path": "data/other_people/flickr_29.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A little boy rides a bike down a hill on a miniature dirt bike."
+ },
+ {
+  "path": "data/other_people/flickr_30.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A group of people sit around a table outside on a porch at night."
+ },
+ {
+  "path": "data/other_people/flickr_31.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "There are workers laying out the tracks for a trolley."
+ },
+ {
+  "path": "data/other_people/flickr_32.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Three young adults are sitting around, with the girl pretending to kick one of the guys in the face while laughing, and the guy behind him looks like he's in midsentence."
+ },
+ {
+  "path": "data/other_people/flickr_33.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A girl is sitting on the beach and appears to be approaching a hit on the head by a plastic inflated hammer."
+ },
+ {
+  "path": "data/other_people/flickr_34.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Two women hugging in a grassy, fenced field with a cow's behind in the background."
+ },
+ {
+  "path": "data/other_people/flickr_35.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A boy wearing a white t-shirt walks on the grass and carries a soccer ball."
+ },
+ {
+  "path": "data/other_people/flickr_36.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Five men, one wearing a white shirt standing on something, hanging up a picture of a child."
+ },
+ {
+  "path": "data/other_people/flickr_37.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A blond child is wearing blue goggles and a green Speedo tank top while swimming underwater."
+ },
+ {
+  "path": "data/other_people/flickr_38.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "Two men in construction vests are working on the side of a street with machines."
+ },
+ {
+  "path": "data/other_people/flickr_39.jpg",
+  "label": "other_people",
+  "source": "flickr30k",
+  "caption": "A man wearing a yellow shirt and tan pants plays golf outside while being watched by other people."
+ }
+]

@@ -1,0 +1,156 @@
+{
+ "electricity": {
+  "November 2025": {
+   "kwh": 798,
+   "total": 130.85,
+   "order": 0
+  },
+  "December 2025": {
+   "kwh": 1112,
+   "total": 177.22,
+   "order": 1
+  },
+  "January 2026": {
+   "kwh": 1164,
+   "total": 184.9,
+   "order": 2
+  },
+  "February 2026": {
+   "kwh": 1067,
+   "total": 170.57,
+   "order": 3
+  },
+  "March 2026": {
+   "kwh": 825,
+   "total": 134.84,
+   "order": 4
+  },
+  "April 2026": {
+   "kwh": 664,
+   "total": 111.06,
+   "order": 5
+  },
+  "May 2026": {
+   "kwh": 627,
+   "total": 105.59,
+   "order": 6
+  },
+  "June 2026": {
+   "kwh": 806,
+   "total": 132.03,
+   "order": 7
+  },
+  "July 2026": {
+   "kwh": 1023,
+   "total": 164.08,
+   "order": 8
+  },
+  "August 2026": {
+   "kwh": 1111,
+   "total": 177.07,
+   "order": 9
+  },
+  "September 2026": {
+   "kwh": 863,
+   "total": 140.45,
+   "order": 10
+  },
+  "October 2026": {
+   "kwh": 677,
+   "total": 112.98,
+   "order": 11
+  }
+ },
+ "bank": {
+  "April": {
+   "spend": {
+    "rent": 2150.0,
+    "fuel": 424.51,
+    "eating out": 120.29,
+    "groceries": 383.62,
+    "subscription": 27.48,
+    "electricity": 134.84
+   },
+   "closing_balance": 7439.26
+  },
+  "May": {
+   "spend": {
+    "rent": 2150.0,
+    "eating out": 552.77,
+    "subscription": 27.48,
+    "electricity": 111.06,
+    "fuel": 121.03,
+    "groceries": 311.53
+   },
+   "closing_balance": 7406.13
+  },
+  "June": {
+   "spend": {
+    "rent": 2150.0,
+    "eating out": 539.61,
+    "fuel": 204.35,
+    "subscription": 27.48,
+    "electricity": 105.59,
+    "groceries": 71.77
+   },
+   "closing_balance": 7581.2
+  },
+  "July": {
+   "spend": {
+    "rent": 2150.0,
+    "eating out": 359.5,
+    "fuel": 231.25,
+    "groceries": 257.69,
+    "subscription": 27.48,
+    "electricity": 132.03
+   },
+   "closing_balance": 7522.05
+  },
+  "August": {
+   "spend": {
+    "rent": 2150.0,
+    "fuel": 207.32,
+    "eating out": 308.46,
+    "groceries": 346.04,
+    "subscription": 27.48,
+    "electricity": 164.08
+   },
+   "closing_balance": 7476.62
+  },
+  "September": {
+   "spend": {
+    "rent": 2150.0,
+    "fuel": 146.9,
+    "groceries": 437.3,
+    "eating out": 87.74,
+    "subscription": 27.48,
+    "electricity": 177.07
+   },
+   "closing_balance": 7653.51
+  }
+ },
+ "answers": {
+  "total_electricity_12_months": 1741.64,
+  "highest_month": "January 2026",
+  "highest_total": 184.9,
+  "lowest_month": "May 2026",
+  "lowest_total": 105.59,
+  "average_electricity": 145.14,
+  "last_month": "October 2026",
+  "last_total": 112.98,
+  "previous_month": "September 2026",
+  "previous_total": 140.45,
+  "last_vs_previous_pct": -19.6,
+  "first_half_avg": 151.57,
+  "second_half_avg": 138.7,
+  "groceries_september": 437.3,
+  "bank_6_month_spend_by_category": {
+   "eating out": 1968.37,
+   "electricity": 824.67,
+   "fuel": 1335.36,
+   "groceries": 1807.95,
+   "rent": 12900.0,
+   "subscription": 164.88
+  }
+ }
+}

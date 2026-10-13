@@ -1,0 +1,155 @@
+[
+ {
+  "model": "microsoft/microsoft-decision-1",
+  "state": "parts",
+  "ok": false,
+  "p_yes": null,
+  "s": 1.15,
+  "cost": null,
+  "err": "{\"error\":{\"message\":\"HTTP 422: {\\\"detail\\\":\\\"invalid model request: Question prompt exceeds the 32768-token context limit including the decision token\\\"}\\n\",\"co"
+ },
+ {
+  "model": "microsoft/microsoft-decision-1",
+  "state": "messages",
+  "ok": false,
+  "p_yes": null,
+  "s": 0.57,
+  "cost": null,
+  "err": "{\"error\":{\"message\":\"HTTP 422: {\\\"detail\\\":\\\"invalid model request: Question prompt exceeds the 32768-token context limit including the decision token\\\"}\\n\",\"co"
+ },
+ {
+  "model": "openai/gpt-6-luna-decisions",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.99,
+  "s": 1.01,
+  "cost": 4.35e-05,
+  "err": null
+ },
+ {
+  "model": "perplexity/pplx-decider-v1.1-27b",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.9984327874152625,
+  "s": 0.62,
+  "cost": 7.48e-06,
+  "err": null
+ },
+ {
+  "model": "cloudflare/clef-flash",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.8843,
+  "s": 0.86,
+  "cost": 1.6188e-05,
+  "err": null
+ },
+ {
+  "model": "cloudflare/clef",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.055,
+  "s": 1.82,
+  "cost": 0.00393216,
+  "err": null
+ },
+ {
+  "model": "cloudflare/clef-omni",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.9023,
+  "s": 1.01,
+  "cost": 6.36e-05,
+  "err": null
+ },
+ {
+  "model": "inception/mercury-decide:free",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.9706877670227323,
+  "s": 0.59,
+  "cost": 0,
+  "err": null
+ },
+ {
+  "model": "typesafe/jev-1.13",
+  "state": "parts",
+  "ok": false,
+  "p_yes": null,
+  "s": 0.36,
+  "cost": null,
+  "err": "{\"error\":{\"message\":\"HTTP 400: {\\\"detail\\\":{\\\"error_type\\\":\\\"max_tokens_exceeded\\\"}}\",\"code\":400}}"
+ },
+ {
+  "model": "typesafe/jev-1.13",
+  "state": "messages",
+  "ok": false,
+  "p_yes": null,
+  "s": 0.42,
+  "cost": null,
+  "err": "{\"error\":{\"message\":\"HTTP 400: {\\\"detail\\\":{\\\"error_type\\\":\\\"max_tokens_exceeded\\\"}}\",\"code\":400}}"
+ },
+ {
+  "model": "nace-ai/drex-v1.5",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.081,
+  "s": 1.57,
+  "cost": 0.00278248,
+  "err": null
+ },
+ {
+  "model": "liquid/d1",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.9867771803864249,
+  "s": 0.53,
+  "cost": 1.796e-05,
+  "err": null
+ },
+ {
+  "model": "upstage/solar-decide-flash",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.283676,
+  "s": 3.41,
+  "cost": 0.0032666,
+  "err": null
+ },
+ {
+  "model": "upstage/solar-decide",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.158268,
+  "s": 17.57,
+  "cost": 0.0032666,
+  "err": null
+ },
+ {
+  "model": "togethercomputer/tev1-4b-experimental",
+  "state": "parts",
+  "ok": true,
+  "p_yes": 0.2227001422874046,
+  "s": 2.82,
+  "cost": 0.002924586,
+  "err": null
+ },
+ {
+  "model": "jaredpalmer/kev-4b",
+  "state": "parts",
+  "ok": false,
+  "p_yes": null,
+  "s": 0.85,
+  "cost": null,
+  "err": "{\"error\":{\"message\":\"HTTP 400: {\\\"code\\\":20015,\\\"message\\\":\\\"The parameter is invalid. Please check again.\\\",\\\"data\\\":null}\",\"code\":400}}"
+ },
+ {
+  "model": "jaredpalmer/kev-4b",
+  "state": "messages",
+  "ok": false,
+  "p_yes": null,
+  "s": 0.82,
+  "cost": null,
+  "err": "{\"error\":{\"message\":\"HTTP 400: {\\\"code\\\":20015,\\\"message\\\":\\\"The parameter is invalid. Please check again.\\\",\\\"data\\\":null}\",\"code\":400}}"
+ }
+]

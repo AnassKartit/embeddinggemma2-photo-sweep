@@ -1,0 +1,86 @@
+[
+ {
+  "out": "data/other_family/fam2_dinner.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the family eating couscous at home on a Friday, 4:3",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_beach.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the family at a beach in Tangier, 4:3",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_bday.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the girl's birthday party with a pink cake, 3:4",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_eid.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the family in traditional clothes for Eid, 4:3",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_park.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the boy and girl playing in a park, 3:4",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_selfie.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: a selfie of the mother with her two kids, 3:4",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_wedding.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the family at a wedding party at night, 4:3",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_school.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the girl in her school apron at the door, 3:4",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_market.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the father and boy buying fruit at a souk, 4:3",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_trip.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the family next to their car on a mountain road, 4:3",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_graduation.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the teenage boy holding a certificate with his parents, 3:4",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam2_couch.png",
+  "prompt": "Use the attached reference sheet: these are the SAME four people (father, mother, young girl, teenage boy); keep their faces and ages exactly but give them DIFFERENT clothes than in the sheet. Candid, slightly imperfect smartphone photo, natural light, real home-camera look, no text. Scene: the family watching TV on the couch, 4:3",
+  "refs": [
+   "data/refs/family2_sheet.jpg"
+  ]
+ }
+]

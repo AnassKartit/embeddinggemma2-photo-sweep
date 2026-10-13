@@ -1,0 +1,15 @@
+sentence-transformers==6.1.0
+transformers==5.19.0
+torch==2.14.1
+opencv-python==5.0.0
+scikit-learn==1.9.1
+pillow==12.3.0
+numpy==2.5.4
+psutil
+requests
+fastapi==0.118.0
+uvicorn==0.37.0
+python-multipart==0.0.20
+mlx-lm==0.31.3
+pypdf==6.1.1
+python-docx==1.2.0

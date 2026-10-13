@@ -1,0 +1,30 @@
+{
+ "threshold": 0.363,
+ "ms_per_image_cpu": 25.5,
+ "faces_found": {
+  "family": 1.0,
+  "junk": 0.078,
+  "other_family": 1.0,
+  "other_people": 0.525
+ },
+ "k": {
+  "1": {
+   "family": 0.98,
+   "junk": 0.006,
+   "other_family": 0.433,
+   "other_people": 0.006
+  },
+  "3": {
+   "family": 1.0,
+   "junk": 0.017,
+   "other_family": 0.771,
+   "other_people": 0.016
+  },
+  "5": {
+   "family": 1.0,
+   "junk": 0.023,
+   "other_family": 0.863,
+   "other_people": 0.025
+  }
+ }
+}

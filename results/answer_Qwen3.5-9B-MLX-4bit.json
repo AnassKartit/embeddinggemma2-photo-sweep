@@ -1,0 +1,76 @@
+{
+ "llm": "mlx-community/Qwen3.5-9B-MLX-4bit",
+ "load_s": 4.2,
+ "peak_gb": 5.85,
+ "correct": 11,
+ "of": 11,
+ "median_answer_s": 4.79,
+ "rows": [
+  {
+   "q": "how much was my latest electricity bill?",
+   "answer": "Your latest electricity bill was $131.44, according to the file ebill_download.pdf.",
+   "ok": true,
+   "answer_s": 7.92
+  },
+  {
+   "q": "how much was my internet bill?",
+   "answer": "Your internet bill was $79.99 according to the file internet_bill_sept.pdf.",
+   "ok": true,
+   "answer_s": 6.01
+  },
+  {
+   "q": "when does my lease end?",
+   "answer": "Your lease ends on 31 January 2027 according to the file apartment_lease_2026.pdf.",
+   "ok": true,
+   "answer_s": 6.28
+  },
+  {
+   "q": "how much do I owe the dentist?",
+   "answer": "You owe $185.00 according to invoice_8812.pdf.",
+   "ok": true,
+   "answer_s": 3.48
+  },
+  {
+   "q": "what seat am I on my flight to New York?",
+   "answer": "You are in seat 14A according to the boarding_pass_PDX_JFK.pdf file.",
+   "ok": true,
+   "answer_s": 3.86
+  },
+  {
+   "q": "when is my doctor appointment?",
+   "answer": "Your doctor appointment is on Tuesday, 4 November 2026 at 9:30 am, according to the file doctor_appointment.pdf.",
+   "ok": true,
+   "answer_s": 4.79
+  },
+  {
+   "q": "what's the guest wifi network called?",
+   "answer": "The guest Wi-Fi network is called CarterGuest, according to home_wifi_setup.docx.",
+   "ok": true,
+   "answer_s": 4.27
+  },
+  {
+   "q": "when is the school winter break?",
+   "answer": "The school winter break is from 21 December 2026 to 1 January 2027 according to kids_school_calendar.pdf.",
+   "ok": true,
+   "answer_s": 4.84
+  },
+  {
+   "q": "how much was my tax refund?",
+   "answer": "Your tax refund was $1,120 according to the file tax_summary_2025.pdf.",
+   "ok": true,
+   "answer_s": 4.64
+  },
+  {
+   "q": "what's my monthly rent?",
+   "answer": "Your monthly rent is $2,150 according to the apartment_lease_2026.pdf file.",
+   "ok": true,
+   "answer_s": 5.0
+  },
+  {
+   "q": "how long do I bake the lasagna?",
+   "answer": "You should bake the lasagna for 45 minutes, according to the file recipe_lasagna.docx.",
+   "ok": true,
+   "answer_s": 3.62
+  }
+ ]
+}

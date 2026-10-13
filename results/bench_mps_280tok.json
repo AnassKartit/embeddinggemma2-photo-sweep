@@ -1,0 +1,878 @@
+{
+ "model": "google/embeddinggemma-2 (text+vision, audio not loaded)",
+ "date": "2026-10-12 17:31",
+ "counts": {
+  "accidental": 10,
+  "family": 29,
+  "forward": 10,
+  "greeting": 6,
+  "meme": 4,
+  "other_family": 12,
+  "other_people": 40,
+  "quote": 2,
+  "receipt": 25,
+  "screenshot": 20
+ },
+ "speed": {
+  "device": "mps",
+  "image_tokens": 280,
+  "images": 158,
+  "ms_per_image": 555.7,
+  "load_s": 4.1,
+  "rss_gb": 0.32
+ },
+ "zero_shot": [
+  {
+   "dim": 768,
+   "accuracy_8way": 0.759,
+   "photo_kept_recall": 0.741,
+   "junk_wrongly_kept": 2,
+   "photos_wrongly_flagged": 21,
+   "per_category": {
+    "accidental": 0.4,
+    "family": 0.931,
+    "forward": 0.8,
+    "greeting": 0.667,
+    "meme": 0.75,
+    "other_family": 1.0,
+    "other_people": 0.525,
+    "quote": 1.0,
+    "receipt": 1.0,
+    "screenshot": 0.7
+   },
+   "wrong": [
+    {
+     "path": "family/fam_blurry_kid.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "family/fam_grandpa_portrait.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_00.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_01.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_02.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_03.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_08.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_09.jpg",
+     "truth": "accidental",
+     "pred": "people_photo"
+    },
+    {
+     "path": "junk/codex_cartoon_joke.jpg",
+     "truth": "meme",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/codex_greet_sunday.jpg",
+     "truth": "greeting",
+     "pred": "quote"
+    },
+    {
+     "path": "junk/codex_greet_xmas.jpg",
+     "truth": "greeting",
+     "pred": "people_photo"
+    },
+    {
+     "path": "junk/codex_sticker_pack.jpg",
+     "truth": "forward",
+     "pred": "greeting"
+    },
+    {
+     "path": "junk/codex_viral_car.jpg",
+     "truth": "forward",
+     "pred": "meme"
+    },
+    {
+     "path": "junk/screenshot/web_02.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_05.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_10.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_12.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_14.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_15.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_00.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_02.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_03.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_05.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_07.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_08.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_09.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_10.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_11.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_12.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_14.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_16.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_18.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_22.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_28.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_29.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_31.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_38.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_39.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    }
+   ]
+  },
+  {
+   "dim": 256,
+   "accuracy_8way": 0.785,
+   "photo_kept_recall": 0.753,
+   "junk_wrongly_kept": 1,
+   "photos_wrongly_flagged": 20,
+   "per_category": {
+    "accidental": 0.5,
+    "family": 0.966,
+    "forward": 0.8,
+    "greeting": 0.5,
+    "meme": 0.75,
+    "other_family": 1.0,
+    "other_people": 0.525,
+    "quote": 1.0,
+    "receipt": 1.0,
+    "screenshot": 0.85
+   },
+   "wrong": [
+    {
+     "path": "family/fam_grandpa_portrait.jpg",
+     "truth": "people_photo",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_00.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_01.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_03.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_08.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_09.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/codex_cartoon_joke.jpg",
+     "truth": "meme",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/codex_greet_sunday.jpg",
+     "truth": "greeting",
+     "pred": "quote"
+    },
+    {
+     "path": "junk/codex_greet_thanks.jpg",
+     "truth": "greeting",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/codex_greet_xmas.jpg",
+     "truth": "greeting",
+     "pred": "people_photo"
+    },
+    {
+     "path": "junk/codex_sticker_pack.jpg",
+     "truth": "forward",
+     "pred": "greeting"
+    },
+    {
+     "path": "junk/codex_viral_car.jpg",
+     "truth": "forward",
+     "pred": "meme"
+    },
+    {
+     "path": "junk/screenshot/web_10.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_14.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_15.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_02.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_03.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_05.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_07.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_08.jpg",
+     "truth": "people_photo",
+     "pred": "receipt"
+    },
+    {
+     "path": "other_people/flickr_09.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_10.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_11.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_14.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_16.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_18.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_19.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_21.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_22.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_28.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_29.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_31.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_38.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_39.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    }
+   ]
+  },
+  {
+   "dim": 128,
+   "accuracy_8way": 0.715,
+   "photo_kept_recall": 0.691,
+   "junk_wrongly_kept": 1,
+   "photos_wrongly_flagged": 25,
+   "per_category": {
+    "accidental": 0.1,
+    "family": 0.966,
+    "forward": 0.9,
+    "greeting": 0.333,
+    "meme": 0.75,
+    "other_family": 0.917,
+    "other_people": 0.425,
+    "quote": 1.0,
+    "receipt": 1.0,
+    "screenshot": 0.75
+   },
+   "wrong": [
+    {
+     "path": "family/fam_blurry_kid.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_00.jpg",
+     "truth": "accidental",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_01.jpg",
+     "truth": "accidental",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_02.jpg",
+     "truth": "accidental",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_03.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/accidental/acc_04.jpg",
+     "truth": "accidental",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_05.jpg",
+     "truth": "accidental",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_06.jpg",
+     "truth": "accidental",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_07.jpg",
+     "truth": "accidental",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/accidental/acc_09.jpg",
+     "truth": "accidental",
+     "pred": "screenshot"
+    },
+    {
+     "path": "junk/codex_cartoon_joke.jpg",
+     "truth": "meme",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/codex_greet_bday.jpg",
+     "truth": "greeting",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/codex_greet_sunday.jpg",
+     "truth": "greeting",
+     "pred": "quote"
+    },
+    {
+     "path": "junk/codex_greet_thanks.jpg",
+     "truth": "greeting",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/codex_greet_xmas.jpg",
+     "truth": "greeting",
+     "pred": "people_photo"
+    },
+    {
+     "path": "junk/codex_viral_car.jpg",
+     "truth": "forward",
+     "pred": "meme"
+    },
+    {
+     "path": "junk/screenshot/web_10.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_11.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_13.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_14.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "junk/screenshot/web_15.png",
+     "truth": "screenshot",
+     "pred": "forward"
+    },
+    {
+     "path": "other_family/fam_football.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_00.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_02.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_03.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_05.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_07.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_08.jpg",
+     "truth": "people_photo",
+     "pred": "receipt"
+    },
+    {
+     "path": "other_people/flickr_09.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_10.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_11.jpg",
+     "truth": "people_photo",
+     "pred": "greeting"
+    },
+    {
+     "path": "other_people/flickr_12.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_17.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_18.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_21.jpg",
+     "truth": "people_photo",
+     "pred": "accidental"
+    },
+    {
+     "path": "other_people/flickr_22.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_23.jpg",
+     "truth": "people_photo",
+     "pred": "accidental"
+    },
+    {
+     "path": "other_people/flickr_28.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_29.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_31.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_33.jpg",
+     "truth": "people_photo",
+     "pred": "screenshot"
+    },
+    {
+     "path": "other_people/flickr_35.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_36.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_38.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    },
+    {
+     "path": "other_people/flickr_39.jpg",
+     "truth": "people_photo",
+     "pred": "forward"
+    }
+   ]
+  }
+ ],
+ "my_people": [
+  {
+   "dim": 768,
+   "k": 1,
+   "auc": 0.982,
+   "best_accuracy": 0.959,
+   "family_missed": 0.17,
+   "other_family_wrongly_kept": 0.142,
+   "trials": 20
+  },
+  {
+   "dim": 768,
+   "k": 3,
+   "auc": 0.981,
+   "best_accuracy": 0.961,
+   "family_missed": 0.183,
+   "other_family_wrongly_kept": 0.113,
+   "trials": 20
+  },
+  {
+   "dim": 768,
+   "k": 5,
+   "auc": 0.98,
+   "best_accuracy": 0.965,
+   "family_missed": 0.15,
+   "other_family_wrongly_kept": 0.146,
+   "trials": 20
+  },
+  {
+   "dim": 768,
+   "k": 10,
+   "auc": 0.982,
+   "best_accuracy": 0.964,
+   "family_missed": 0.197,
+   "other_family_wrongly_kept": 0.125,
+   "trials": 20
+  },
+  {
+   "dim": 128,
+   "k": 1,
+   "auc": 0.984,
+   "best_accuracy": 0.965,
+   "family_missed": 0.148,
+   "other_family_wrongly_kept": 0.108,
+   "trials": 20
+  },
+  {
+   "dim": 128,
+   "k": 3,
+   "auc": 0.986,
+   "best_accuracy": 0.966,
+   "family_missed": 0.142,
+   "other_family_wrongly_kept": 0.121,
+   "trials": 20
+  },
+  {
+   "dim": 128,
+   "k": 5,
+   "auc": 0.986,
+   "best_accuracy": 0.97,
+   "family_missed": 0.131,
+   "other_family_wrongly_kept": 0.117,
+   "trials": 20
+  },
+  {
+   "dim": 128,
+   "k": 10,
+   "auc": 0.985,
+   "best_accuracy": 0.973,
+   "family_missed": 0.171,
+   "other_family_wrongly_kept": 0.062,
+   "trials": 20
+  }
+ ],
+ "dedupe": {
+  "duplicate_cos_min": 0.951,
+  "duplicate_cos_median": 0.989,
+  "different_cos_max": 0.885,
+  "different_cos_median": 0.683,
+  "threshold_95pct_recall": 0.962,
+  "false_pairs_at_threshold": 0,
+  "pairs": 190
+ },
+ "search": {
+  "top1": 7,
+  "top5": 8,
+  "of": 10,
+  "queries": {
+   "a birthday cake": {
+    "hit_top1": true,
+    "hit_top5": true,
+    "top5": [
+     "family/fam_bday.jpg",
+     "other_family/fam_bday.jpg",
+     "junk/screenshot/chat_5.png",
+     "junk/screenshot/chat_4.png",
+     "junk/screenshot/chat_3.png"
+    ]
+   },
+   "receipt from a shop": {
+    "hit_top1": true,
+    "hit_top5": true,
+    "top5": [
+     "junk/receipt/cord_02.jpg",
+     "junk/receipt/cord_21.jpg",
+     "junk/receipt/cord_00.jpg",
+     "junk/receipt/cord_03.jpg",
+     "junk/receipt/cord_07.jpg"
+    ]
+   },
+   "kids at the beach": {
+    "hit_top1": false,
+    "hit_top5": true,
+    "top5": [
+     "other_people/flickr_33.jpg",
+     "family/fam_beach.jpg",
+     "other_family/fam2_beach.jpg",
+     "other_family/fam_beach.jpg",
+     "other_people/flickr_37.jpg"
+    ]
+   },
+   "a meme": {
+    "hit_top1": true,
+    "hit_top5": true,
+    "top5": [
+     "junk/codex_meme_cat.jpg",
+     "junk/codex_viral_car.jpg",
+     "junk/codex_meme_sports.jpg",
+     "junk/codex_meme_office.jpg",
+     "junk/accidental/acc_00.jpg"
+    ]
+   },
+   "good morning": {
+    "hit_top1": true,
+    "hit_top5": true,
+    "top5": [
+     "junk/codex_greet_morning1.jpg",
+     "junk/codex_meme_cat.jpg",
+     "junk/codex_health_tip.jpg",
+     "junk/screenshot/chat_3.png",
+     "junk/codex_greet_sunday.jpg"
+    ]
+   },
+   "snow": {
+    "hit_top1": true,
+    "hit_top5": true,
+    "top5": [
+     "family/fam_snow.jpg",
+     "other_people/flickr_11.jpg",
+     "junk/codex_greet_xmas.jpg",
+     "family/fam_christmas.jpg",
+     "junk/screenshot/web_09.png"
+    ]
+   },
+   "a website screenshot": {
+    "hit_top1": true,
+    "hit_top5": true,
+    "top5": [
+     "junk/screenshot/web_07.png",
+     "junk/screenshot/web_11.png",
+     "junk/screenshot/web_12.png",
+     "junk/screenshot/web_09.png",
+     "junk/screenshot/web_13.png"
+    ]
+   },
+   "a chat conversation": {
+    "hit_top1": true,
+    "hit_top5": true,
+    "top5": [
+     "junk/screenshot/chat_1.png",
+     "junk/screenshot/chat_3.png",
+     "junk/screenshot/chat_5.png",
+     "junk/screenshot/chat_4.png",
+     "junk/screenshot/chat_2.png"
+    ]
+   },
+   "grandmother pouring tea": {
+    "hit_top1": false,
+    "hit_top5": false,
+    "top5": [
+     "junk/codex_cartoon_joke.jpg",
+     "family/fam_christmas.jpg",
+     "other_family/fam_grandma_kids.jpg",
+     "family/fam_kitchen.jpg",
+     "family/fam_thanksgiving.jpg"
+    ]
+   },
+   "prayer times": {
+    "hit_top1": false,
+    "hit_top5": false,
+    "top5": [
+     "junk/screenshot/chat_3.png",
+     "junk/screenshot/chat_2.png",
+     "other_family/fam_dinner.jpg",
+     "junk/screenshot/chat_1.png",
+     "junk/screenshot/chat_5.png"
+    ]
+   }
+  }
+ },
+ "storage_bytes_per_photo": {
+  "768_float32": 3072,
+  "128_int8": 128
+ }
+}

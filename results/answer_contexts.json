@@ -1,0 +1,150 @@
+[
+ {
+  "q": "how much was my latest electricity bill?",
+  "want": [
+   "131.44"
+  ],
+  "files": [
+   "ebill_download.pdf",
+   "CascadePower_eBill.pdf",
+   "power_bill_march_2024.pdf"
+  ],
+  "search_ms": 147.5,
+  "context": "FILE: ebill_download.pdf (modified 03 October 2026)\nCascade Power\nAccount 4410-2287 \u00b7 Service address: 18 Elm Street, Portland \u00b7 Customer: Sam Carter\nElectricity statement \u00b7 September 2026\nItem Amount\nEnergy used: 802 kWh at $0.142 $113.88\nBasic service fee $12.50\nState energy tax 4% $5.06\nTotal due $131.44\nAutopay is on.\n\nFILE: CascadePower_eBill.pdf (modified 14 May 2025)\nCascade Power\nAccount 4410-2287 \u00b7 Service address: 18 Elm Street, Portland \u00b7 Customer: Sam Carter\nElectricity statement \u00b7 May 2025\nItem Amount\nEnergy used: 640 kWh at $0.142 $90.88\nBasic service fee $12.50\nState energy tax 4% $4.14\nTotal due $107.52\nAutopay is on.\n\nFILE: power_bill_march_2024.pdf (modified 02 March 2024)\nCascade Power\nAccount 4410-2287 \u00b7 Service address: 18 Elm Street, Portland \u00b7 Customer: Sam Carter\nElectricity statement \u00b7 March 2024\nItem Amount\nEnergy used: 861 kWh at $0.142 $122.26\nBasic service fee $12.50\nState energy tax 4% $5.39\nTotal due $140.15\nAutopay is on."
+ },
+ {
+  "q": "how much was my internet bill?",
+  "want": [
+   "79.99"
+  ],
+  "files": [
+   "internet_bill_sept.pdf",
+   "CascadePower_eBill.pdf",
+   "power_bill_march_2024.pdf"
+  ],
+  "search_ms": 103.4,
+  "context": "FILE: internet_bill_sept.pdf (modified 20 September 2026)\nCascade Fiber\nMonthly statement \u00b7 September 2026 \u00b7 Account 55-1043\nFiber 1 Gbps plan $69.99\nRouter rental $10.00\nT otal $79.99 \nAutopay on 28 September 2026.\n\nFILE: CascadePower_eBill.pdf (modified 14 May 2025)\nCascade Power\nAccount 4410-2287 \u00b7 Service address: 18 Elm Street, Portland \u00b7 Customer: Sam Carter\nElectricity statement \u00b7 May 2025\nItem Amount\nEnergy used: 640 kWh at $0.142 $90.88\nBasic service fee $12.50\nState energy tax 4% $4.14\nTotal due $107.52\nAutopay is on.\n\nFILE: power_bill_march_2024.pdf (modified 02 March 2024)\nCascade Power\nAccount 4410-2287 \u00b7 Service address: 18 Elm Street, Portland \u00b7 Customer: Sam Carter\nElectricity statement \u00b7 March 2024\nItem Amount\nEnergy used: 861 kWh at $0.142 $122.26\nBasic service fee $12.50\nState energy tax 4% $5.39\nTotal due $140.15\nAutopay is on."
+ },
+ {
+  "q": "when does my lease end?",
+  "want": [
+   "31 January 2027",
+   "January 31, 2027"
+  ],
+  "files": [
+   "apartment_lease_2026.pdf",
+   "internet_bill_sept.pdf",
+   "invoice_8812.pdf"
+  ],
+  "search_ms": 122.6,
+  "context": "FILE: apartment_lease_2026.pdf (modified 20 January 2026)\nResidential Lease Agreement\nTenant: Sam Carter \u00b7 Landlord: Elm Street Properties LLC\nT erm \nThe lease starts on 1 February 2026 and ends on 31 January 2027.\nRent \n$2,150 per month, due on the 1st. Security deposit $2,150.\nPets \nOne dog allowed.\n\nFILE: internet_bill_sept.pdf (modified 20 September 2026)\nCascade Fiber\nMonthly statement \u00b7 September 2026 \u00b7 Account 55-1043\nFiber 1 Gbps plan $69.99\nRouter rental $10.00\nT otal $79.99 \nAutopay on 28 September 2026.\n\nFILE: invoice_8812.pdf (modified 12 September 2026)\nRiverside Family Dental\nInvoice 8812 \u00b7 12 September 2026\nPatient\nSam Carter\nService Amount\nCheck-up and cleaning $145.00\nX-ray $40.00\nTotal due $185.00\nPlease pay within 30 days."
+ },
+ {
+  "q": "how much do I owe the dentist?",
+  "want": [
+   "185"
+  ],
+  "files": [
+   "invoice_8812.pdf",
+   "IMG_2003.jpg",
+   "IMG_2004.jpg"
+  ],
+  "search_ms": 80.6,
+  "context": "FILE: invoice_8812.pdf (modified 12 September 2026)\nRiverside Family Dental\nInvoice 8812 \u00b7 12 September 2026\nPatient\nSam Carter\nService Amount\nCheck-up and cleaning $145.00\nX-ray $40.00\nTotal due $185.00\nPlease pay within 30 days.\n\nFILE: IMG_2003.jpg (modified 03 July 2026)\n(image file, no text)\n\nFILE: IMG_2004.jpg (modified 04 July 2026)\n(image file, no text)"
+ },
+ {
+  "q": "what seat am I on my flight to New York?",
+  "want": [
+   "14A"
+  ],
+  "files": [
+   "boarding_pass_PDX_JFK.pdf",
+   "doctor_appointment.pdf",
+   "IMG_1001.jpg"
+  ],
+  "search_ms": 115.1,
+  "context": "FILE: boarding_pass_PDX_JFK.pdf (modified 05 October 2026)\nBoarding pass\nPassenger: CARTER / SAM\nFrom Portland (PDX)\nTo New York (JFK)\nDate 21 November 2026\nFlight NW 482 \u00b7 boarding 07:15 \u00b7 gate C9 \u00b7 seat 14A\n\nFILE: doctor_appointment.pdf (modified 01 October 2026)\nAppointment con\ufb01rmation\nNorthgate Clinic\nSam Carter, annual physical, Tuesday 4 November 2026 at 9:30 am. Please arrive 10 minutes early.\n\nFILE: IMG_1001.jpg (modified 04 March 2026)\n(image file, no text)"
+ },
+ {
+  "q": "when is my doctor appointment?",
+  "want": [
+   "4 November",
+   "November 4"
+  ],
+  "files": [
+   "doctor_appointment.pdf",
+   "invoice_8812.pdf",
+   "boarding_pass_PDX_JFK.pdf"
+  ],
+  "search_ms": 87.3,
+  "context": "FILE: doctor_appointment.pdf (modified 01 October 2026)\nAppointment con\ufb01rmation\nNorthgate Clinic\nSam Carter, annual physical, Tuesday 4 November 2026 at 9:30 am. Please arrive 10 minutes early.\n\nFILE: invoice_8812.pdf (modified 12 September 2026)\nRiverside Family Dental\nInvoice 8812 \u00b7 12 September 2026\nPatient\nSam Carter\nService Amount\nCheck-up and cleaning $145.00\nX-ray $40.00\nTotal due $185.00\nPlease pay within 30 days.\n\nFILE: boarding_pass_PDX_JFK.pdf (modified 05 October 2026)\nBoarding pass\nPassenger: CARTER / SAM\nFrom Portland (PDX)\nTo New York (JFK)\nDate 21 November 2026\nFlight NW 482 \u00b7 boarding 07:15 \u00b7 gate C9 \u00b7 seat 14A"
+ },
+ {
+  "q": "what's the guest wifi network called?",
+  "want": [
+   "CarterGuest"
+  ],
+  "files": [
+   "home_wifi_setup.docx",
+   "internet_bill_sept.pdf",
+   "Zoom.pkg"
+  ],
+  "search_ms": 91.4,
+  "context": "FILE: home_wifi_setup.docx (modified 03 February 2026)\nHome Wi-Fi\nNetwork name: CarterHome\nRouter admin page: 192.168.1.1\nGuest network: CarterGuest\n\nFILE: internet_bill_sept.pdf (modified 20 September 2026)\nCascade Fiber\nMonthly statement \u00b7 September 2026 \u00b7 Account 55-1043\nFiber 1 Gbps plan $69.99\nRouter rental $10.00\nT otal $79.99 \nAutopay on 28 September 2026.\n\nFILE: Zoom.pkg (modified 02 April 2026)\n(other file, no text)"
+ },
+ {
+  "q": "when is the school winter break?",
+  "want": [
+   "21 December",
+   "December 21"
+  ],
+  "files": [
+   "kids_school_calendar.pdf",
+   "IMG_1026.jpg",
+   "IMG_1027.jpg"
+  ],
+  "search_ms": 70.6,
+  "context": "FILE: kids_school_calendar.pdf (modified 25 August 2026)\nMaple Grove Elementary, 2026-2027 calendar\nFirst day 2 September 2026\nThanksgiving break 25 to 27 November 2026\nWinter break 21 December 2026 to 1 January 2027\nSpring break 22 to 26 March 2027\n\nFILE: IMG_1026.jpg (modified 14 July 2026)\n(image file, no text)\n\nFILE: IMG_1027.jpg (modified 21 October 2026)\n(image file, no text)"
+ },
+ {
+  "q": "how much was my tax refund?",
+  "want": [
+   "1,120",
+   "1120"
+  ],
+  "files": [
+   "tax_summary_2025.pdf",
+   "IMG_2002.jpg",
+   "power_bill_march_2024.pdf"
+  ],
+  "search_ms": 66.9,
+  "context": "FILE: tax_summary_2025.pdf (modified 30 March 2026)\n2025 Tax Summary\nPrepared for Sam and Emma Carter\nTotal income $148,200\nFederal tax withheld $24,310\nRefund $1,120\n\nFILE: IMG_2002.jpg (modified 02 July 2026)\n(image file, no text)\n\nFILE: power_bill_march_2024.pdf (modified 02 March 2024)\nCascade Power\nAccount 4410-2287 \u00b7 Service address: 18 Elm Street, Portland \u00b7 Customer: Sam Carter\nElectricity statement \u00b7 March 2024\nItem Amount\nEnergy used: 861 kWh at $0.142 $122.26\nBasic service fee $12.50\nState energy tax 4% $5.39\nTotal due $140.15\nAutopay is on."
+ },
+ {
+  "q": "what's my monthly rent?",
+  "want": [
+   "2,150",
+   "2150"
+  ],
+  "files": [
+   "apartment_lease_2026.pdf",
+   "internet_bill_sept.pdf",
+   "invoice_8812.pdf"
+  ],
+  "search_ms": 52.8,
+  "context": "FILE: apartment_lease_2026.pdf (modified 20 January 2026)\nResidential Lease Agreement\nTenant: Sam Carter \u00b7 Landlord: Elm Street Properties LLC\nT erm \nThe lease starts on 1 February 2026 and ends on 31 January 2027.\nRent \n$2,150 per month, due on the 1st. Security deposit $2,150.\nPets \nOne dog allowed.\n\nFILE: internet_bill_sept.pdf (modified 20 September 2026)\nCascade Fiber\nMonthly statement \u00b7 September 2026 \u00b7 Account 55-1043\nFiber 1 Gbps plan $69.99\nRouter rental $10.00\nT otal $79.99 \nAutopay on 28 September 2026.\n\nFILE: invoice_8812.pdf (modified 12 September 2026)\nRiverside Family Dental\nInvoice 8812 \u00b7 12 September 2026\nPatient\nSam Carter\nService Amount\nCheck-up and cleaning $145.00\nX-ray $40.00\nTotal due $185.00\nPlease pay within 30 days."
+ },
+ {
+  "q": "how long do I bake the lasagna?",
+  "want": [
+   "45"
+  ],
+  "files": [
+   "recipe_lasagna.docx",
+   "IMG_1021.jpg",
+   "IMG_1003.jpg"
+  ],
+  "search_ms": 60.1,
+  "context": "FILE: recipe_lasagna.docx (modified 20 November 2025)\nGrandpa's lasagna\nIngredients: lasagna sheets, ground beef, tomato sauce, ricotta, mozzarella, parmesan.\nBake 45 minutes at 375 F. Rest 15 minutes before serving.\n\nFILE: IMG_1021.jpg (modified 13 February 2026)\n(image file, no text)\n\nFILE: IMG_1003.jpg (modified 26 September 2026)\n(image file, no text)"
+ }
+]

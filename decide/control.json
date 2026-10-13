@@ -1,0 +1,156 @@
+[
+ {
+  "model": "openai/gpt-6-luna-decisions",
+  "p_junk_on_junk": [
+   0.94,
+   1,
+   0.98
+  ],
+  "p_junk_on_family": [
+   0,
+   0,
+   0
+  ],
+  "sees_image": true
+ },
+ {
+  "model": "perplexity/pplx-decider-v1.1-27b",
+  "p_junk_on_junk": [
+   0.9829676505210966,
+   0.9918136169112544,
+   0.9877940159053752
+  ],
+  "p_junk_on_family": [
+   0.3041361182908583,
+   0.20982064457486868,
+   0.0912340486368595
+  ],
+  "sees_image": true
+ },
+ {
+  "model": "cloudflare/clef-flash",
+  "p_junk_on_junk": [
+   0.6179,
+   0.928,
+   0.6095
+  ],
+  "p_junk_on_family": [
+   0.5727,
+   0.6261,
+   0.6151
+  ],
+  "sees_image": false
+ },
+ {
+  "model": "cloudflare/clef",
+  "p_junk_on_junk": [
+   0.9536,
+   0.9676,
+   0.9581
+  ],
+  "p_junk_on_family": [
+   0.0107,
+   0.0412,
+   0.3262
+  ],
+  "sees_image": true
+ },
+ {
+  "model": "cloudflare/clef-omni",
+  "p_junk_on_junk": [
+   0.9301,
+   0.9779,
+   0.8545
+  ],
+  "p_junk_on_family": [
+   0.0154,
+   0.0056,
+   0.0069
+  ],
+  "sees_image": true
+ },
+ {
+  "model": "inception/mercury-decide:free",
+  "p_junk_on_junk": [
+   0.9947798735132978,
+   0.9982992773794473,
+   0.9940889308701276
+  ],
+  "p_junk_on_family": [
+   0.0052201246586025775,
+   0.004070137593202688,
+   0.001032231151276294
+  ],
+  "sees_image": true
+ },
+ {
+  "model": "nace-ai/drex-v1.5",
+  "p_junk_on_junk": [
+   0.3379,
+   0.3057,
+   0.4843
+  ],
+  "p_junk_on_family": [
+   0.3757,
+   0.2594,
+   0.2279
+  ],
+  "sees_image": false
+ },
+ {
+  "model": "liquid/d1",
+  "p_junk_on_junk": [
+   0.9947798751382753,
+   0.9896718479376306,
+   0.9724147143756431
+  ],
+  "p_junk_on_family": [
+   0.03732688948593843,
+   0.050330631173001586,
+   0.02758528102764882
+  ],
+  "sees_image": true
+ },
+ {
+  "model": "upstage/solar-decide-flash",
+  "p_junk_on_junk": [
+   0.583662,
+   0.645289,
+   0.614406
+  ],
+  "p_junk_on_family": [
+   0.677532,
+   0.589054,
+   0.569125
+  ],
+  "sees_image": false
+ },
+ {
+  "model": "upstage/solar-decide",
+  "p_junk_on_junk": [
+   0.429456,
+   0.552671,
+   0.046097
+  ],
+  "p_junk_on_family": [
+   0.559224,
+   0.011359,
+   0.513796
+  ],
+  "sees_image": false
+ },
+ {
+  "model": "togethercomputer/tev1-4b-experimental",
+  "p_junk_on_junk": [
+   0.2689414095732793,
+   0.2689414253022338,
+   0.2942149576273124
+  ],
+  "p_junk_on_family": [
+   0.2689414174377565,
+   0.26894143316671126,
+   0.24508500758182128
+  ],
+  "sees_image": false
+ }
+]

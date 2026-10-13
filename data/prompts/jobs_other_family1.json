@@ -1,0 +1,212 @@
+[
+ {
+  "out": "data/other_family/fam_dinner.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the whole family around a table with a tagine at home, evening, warm light, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_beach.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the parents and two kids on a beach in Agadir, wind in hair, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_bday.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the son blowing candles on a birthday cake, family clapping behind him, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_eid.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the family dressed in traditional clothes for Eid in a living room, posing together, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_park.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the daughter and son on swings in a park, the mother watching, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_car_selfie.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: a selfie by the father in the car with the mother in the passenger seat and kids in the back, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_grandma_kids.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the grandmother hugging both grandchildren on a sofa, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_school.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the son in his school uniform with backpack at the front door, first day of school, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_graduation.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the daughter in a graduation gown holding a diploma with her parents, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_kitchen.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the mother and daughter baking msemen in the kitchen, flour on the table, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_football.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the father and son playing football in a dusty street, motion blur, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_medina.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the family walking in the medina of Fes, seen from behind and side, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_mountains.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the family hiking in the Atlas mountains, wide shot, small figures, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_sleep.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the son asleep on the couch with the grandmother covering him with a blanket, dim light, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_mirror.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the daughter taking a mirror selfie in her bedroom, 9:16",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_couple.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the father and mother alone at a cafe terrace, smiling at the camera, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_tea.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the grandmother pouring mint tea, close-up of her and the teapot, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_homework.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the father helping the son with homework at a desk, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_airport.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the family with suitcases at an airport, the kids excited, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_rain.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the mother and son under an umbrella in the rain, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_group_wide.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: a big family lunch outdoors in a garden, the five of them plus two unknown neighbours at the edge of the frame, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_blurry_kid.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: a blurry, out-of-focus but real photo of the son running toward the camera in a hallway, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_night_party.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the family at a night wedding party, dim, colourful lights, a bit noisy, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_cooking_dad.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the father grilling brochettes on a barbecue on the rooftop, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_pool.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the kids jumping in a hotel pool, splash, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_snow.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the family throwing snow in Ifrane, winter coats, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_museum.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the daughter and grandmother looking at zellige tiles in a museum, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_bike.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the son learning to ride a bike with the father holding the seat, 4:3",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_portrait_mom.png",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: a close portrait of the mother laughing, shallow depth of field, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ },
+ {
+  "out": "data/other_family/fam_portrait_grandpa_sheet.jpg",
+  "prompt": "Use the attached reference sheet: these are the SAME five people (grandmother, father, mother, teenage daughter, young son); keep their faces and ages exactly, clothes can change. Make a candid, slightly imperfect smartphone photo, natural light, real home-camera look, not a studio shot, no text. Scene: the grandmother and the father on a balcony at sunset, 3:4",
+  "refs": [
+   "data/refs/family_sheet.jpg"
+  ]
+ }
+]

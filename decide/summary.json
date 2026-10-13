@@ -1,0 +1,74 @@
+[
+ {
+  "model": "cloudflare/clef",
+  "answered": "158/158",
+  "accuracy": 0.867,
+  "junk_caught": "56/77",
+  "people_photos_lost": "0/81",
+  "median_s": 1.44,
+  "cost_per_1000_photos": 1.09
+ },
+ {
+  "model": "cloudflare/clef-omni",
+  "answered": "158/158",
+  "accuracy": 0.949,
+  "junk_caught": "69/77",
+  "people_photos_lost": "0/81",
+  "median_s": 0.37,
+  "cost_per_1000_photos": 0.054
+ },
+ {
+  "model": "inception/mercury-decide:free",
+  "answered": "158/158",
+  "accuracy": 1.0,
+  "junk_caught": "77/77",
+  "people_photos_lost": "0/81",
+  "median_s": 0.44,
+  "cost_per_1000_photos": 0.0
+ },
+ {
+  "model": "liquid/d1",
+  "answered": "158/158",
+  "accuracy": 0.994,
+  "junk_caught": "76/77",
+  "people_photos_lost": "0/81",
+  "median_s": 0.5,
+  "cost_per_1000_photos": 0.014
+ },
+ {
+  "model": "openai/gpt-6-luna-decisions",
+  "answered": "158/158",
+  "accuracy": 0.981,
+  "junk_caught": "75/77",
+  "people_photos_lost": "1/81",
+  "median_s": 0.36,
+  "cost_per_1000_photos": 0.038
+ },
+ {
+  "model": "perplexity/pplx-decider-v1.1-27b",
+  "answered": "158/158",
+  "accuracy": 1.0,
+  "junk_caught": "77/77",
+  "people_photos_lost": "0/81",
+  "median_s": 0.44,
+  "cost_per_1000_photos": 0.006
+ },
+ {
+  "model": "EmbeddingGemma 2 zero-shot, local (768 dims, 70 tokens)",
+  "answered": "158/158",
+  "accuracy": 0.861,
+  "junk_caught": "76/77",
+  "people_photos_lost": "21/81",
+  "median_s": 0.085,
+  "cost_per_1000_photos": 0
+ },
+ {
+  "model": "EmbeddingGemma 2 zero-shot, local (256 dims, 70 tokens)",
+  "answered": "158/158",
+  "accuracy": 0.88,
+  "junk_caught": "76/77",
+  "people_photos_lost": "18/81",
+  "median_s": 0.085,
+  "cost_per_1000_photos": 0
+ }
+]

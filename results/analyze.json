@@ -1,0 +1,154 @@
+{
+ "llm": "mlx-community/gemma-4-E4B-it-qat-4bit",
+ "electricity": {
+  "bills_found": 12,
+  "files_searched": 14,
+  "total": 1741.64,
+  "average": 145.14,
+  "highest": "January 2026",
+  "lowest": "May 2026",
+  "last_month": "October 2026",
+  "last_total": 112.98,
+  "previous_month": "September 2026",
+  "previous_total": 140.45,
+  "last_vs_previous_pct": -19.6,
+  "first_half_avg": 151.57,
+  "second_half_avg": 138.7,
+  "series": [
+   [
+    "November 2025",
+    130.85,
+    798
+   ],
+   [
+    "December 2025",
+    177.22,
+    1112
+   ],
+   [
+    "January 2026",
+    184.9,
+    1164
+   ],
+   [
+    "February 2026",
+    170.57,
+    1067
+   ],
+   [
+    "March 2026",
+    134.84,
+    825
+   ],
+   [
+    "April 2026",
+    111.06,
+    664
+   ],
+   [
+    "May 2026",
+    105.59,
+    627
+   ],
+   [
+    "June 2026",
+    132.03,
+    806
+   ],
+   [
+    "July 2026",
+    164.08,
+    1023
+   ],
+   [
+    "August 2026",
+    177.07,
+    1111
+   ],
+   [
+    "September 2026",
+    140.45,
+    863
+   ],
+   [
+    "October 2026",
+    112.98,
+    677
+   ]
+  ],
+  "search_ms": 716.6,
+  "trend_pct": -8.5,
+  "answer": "Your last bill was 19.6% lower than the previous month's bill. Overall, the trend shows a decrease, with the second half averaging less than the first half by 8.5%.",
+  "seconds": 43.0
+ },
+ "bank": {
+  "statements": 6,
+  "transactions": 90,
+  "spend_by_category": {
+   "rent": 12900.0,
+   "eating out": 1968.37,
+   "groceries": 1807.95,
+   "fuel": 1335.36,
+   "electricity": 824.67,
+   "subscription": 164.88
+  },
+  "monthly_average_by_category": {
+   "rent": 2150.0,
+   "eating out": 328.06,
+   "subscription": 27.48,
+   "electricity": 137.44,
+   "fuel": 222.56,
+   "groceries": 301.32
+  },
+  "search_ms": 865.0,
+  "possible_savings_per_month": {
+   "eat out half as often": 164.03,
+   "cancel the subscriptions Net\ufb02ix, Spotify": 27.48,
+   "cut fuel by a fifth (car-share or walk short trips)": 44.51
+  },
+  "answer": "Eat out half as often: save about $164.03 a month (you spend $328.06 a month eating out).\nCancel Net\ufb02ix and Spotify: save $27.48 a month.\nDrive a fifth less: save about $44.51 a month (fuel is $222.56 a month).",
+  "seconds": 133.2
+ },
+ "score": {
+  "bills_found": "12/12",
+  "total_exact": true,
+  "per_bill_exact": 12,
+  "highest_right": true,
+  "last_vs_previous_right": true,
+  "naive_total": 1477.17,
+  "naive_total_exact": false,
+  "bank_categories_exact": {
+   "eating out": true,
+   "electricity": true,
+   "fuel": true,
+   "groceries": true,
+   "rent": true,
+   "subscription": true
+  }
+ },
+ "naive_answer": "1477.17",
+ "truth": {
+  "total_electricity_12_months": 1741.64,
+  "highest_month": "January 2026",
+  "highest_total": 184.9,
+  "lowest_month": "May 2026",
+  "lowest_total": 105.59,
+  "average_electricity": 145.14,
+  "last_month": "October 2026",
+  "last_total": 112.98,
+  "previous_month": "September 2026",
+  "previous_total": 140.45,
+  "last_vs_previous_pct": -19.6,
+  "first_half_avg": 151.57,
+  "second_half_avg": 138.7,
+  "groceries_september": 437.3,
+  "bank_6_month_spend_by_category": {
+   "eating out": 1968.37,
+   "electricity": 824.67,
+   "fuel": 1335.36,
+   "groceries": 1807.95,
+   "rent": 12900.0,
+   "subscription": 164.88
+  }
+ }
+}
